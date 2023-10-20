@@ -1,0 +1,2657 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Future-Waves | Web Design</title>
+    <link rel="icon" type="image/ico" href="./assets/images/Logo.ico" />
+
+    <!-- ---- splide css link ---- -->
+    <link
+      href="https://cdn.jsdelivr.net/npm/@splidejs/splide@4.1.4/dist/css/splide.min.css
+"
+      rel="stylesheet"
+    />
+    <!-- ---- AOS css link ---- -->
+    <!-- <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/aos/2.3.4/aos.css"
+      integrity="sha512-1cK78a1o+ht2JcaW6g8OXYwqpev9+6GqOkz9xmBN9iUUhIndKtxwILGWYOSibOKjLsEdjyjZvYDq/cZwNeak0w=="
+      crossorigin="anonymous"
+      referrerpolicy="no-referrer"
+    /> -->
+    <!-- ---- styles link ---- -->
+    <link rel="stylesheet" href="./sass/pages/web-design/main.css" />
+  </head>
+  <body>
+    <!-- ==== Loading Start ==== -->
+    <div class="loading">
+      <div class="loading__wrapper">
+        <span></span>
+        <span></span>
+        <span></span>
+        <span></span>
+        <span></span>
+        <span></span>
+        <span></span>
+        <span></span>
+      </div>
+    </div>
+    <!-- ==== Loading End ==== -->
+
+    <!-- ==== Header Start ==== -->
+    <header class="header">
+      <div class="container header__container">
+        <div class="logo__wrapper" data-aos="fade-up">
+          <a href="./index.html">
+            <img
+              class="lazyload"
+              data-src="./assets/images/Logo.png"
+              alt="logo"
+            />
+          </a>
+        </div>
+        <!--<nav class="nav" data-aos="fade-up">
+          <div class="nav__features">
+            <button class="open__search">
+              <img src="./assets/images/icons/search.png" alt="search" />
+            </button>
+            <button class="close__search">
+              <img src="./assets/images/icons/times.png" alt="search" />
+            </button>
+            <button class="user">
+              <img src="./assets/images/icons/user.png" alt="user" />
+            </button>
+            <div class="languages">
+              <span class="language__title">En</span>
+              <div class="languages__list">
+                <span>En</span>
+                <span>GE</span>
+                <span>TR</span>
+                <span>AR</span>
+              </div>
+            </div>
+          </div>
+          <div class="nav__wrapper">
+             <div class="search__box">
+              <input type="text" placeholder="SEARCH..." onkeyup="inputHandler(this)"/>
+              <button class="btn__bars">
+                <img src="./assets/images/icons/bars.png" alt="bars" />
+              </button>
+              <div class="search__suggestion">
+                <a href="./about-us.html" class="suggestion__item" data-search="about-us">
+                  <h4>about us</h4>
+                  <p>Future Waves, as a technology company...</p>
+                </a>
+                <a href="./products.html" class="suggestion__item" data-search="products">
+                  <h4>products</h4>
+                  <p>Our product lineup includes cutting-edge...</p>
+                </a>
+                <a href="./services.html" class="suggestion__item" data-search="services">
+                  <h4>services</h4>
+                  <p>When introducing our IT services, such as web...</p>
+                </a>
+                <a href="./careers.html" class="suggestion__item" data-search="careers">
+                  <h4>careers</h4>
+                  <p>Working in Future Waves...</p>
+                </a>
+                <a href="./mobile-app.html" class="suggestion__item" data-search="mobile-app">
+                  <h4>mobile app</h4>
+                  <p>Our team of experts has extensive experience...</p>
+                </a>
+                <a href="./web-design.html" class="suggestion__item" data-search="web-design">
+                  <h4>web design</h4>
+                  <p>we specialize in designing and developing...</p>
+                </a>
+                <a href="./web-service.html" class="suggestion__item" data-search="web-service">
+                  <h4>web service</h4>
+                  <p>Having a strategically designed website...</p>
+                </a>
+                <a href="./products/bpms.html" class="suggestion__item" data-search="bpms">
+                  <h4 class="upper">bpms</h4>
+                  <p>BPMS, or Business Process Management System...</p>
+                </a>
+                <a href="./products/crm.html" class="suggestion__item" data-search="crm">
+                  <h4 class="upper">crm</h4>
+                  <p>Customer relationship management is a process...</p>
+                </a>
+                <a href="./products/erp.html" class="suggestion__item" data-search="erp">
+                  <h4 class="upper">erp</h4>
+                  <p>ERP is a comprehensive software solution...</p>
+                </a>
+                <a href="./products/his.html" class="suggestion__item" data-search="his">
+                  <h4 class="upper">his</h4>
+                  <p>HIS is the beating heart of modern healthcare...</p>
+                </a>
+                <a href="./products/mms.html" class="suggestion__item" data-search="mms">
+                  <h4 class="upper">mms</h4>
+                  <p>A Merchandise Management System (MMS) is...</p>
+                </a>
+                <a href="./products/modular-design.html" class="suggestion__item" data-search="modular-design-tools">
+                  <h4>modular design & tools</h4>
+                  <p>These systems or software applications are...</p>
+                </a>
+                <a href="./products/rfid.html" class="suggestion__item" data-search="rfid">
+                  <h4 class="upper">rfid</h4>
+                  <p>Radio Frequency Identification (RFID) is...</p>
+                </a>
+                <p class="message">No results found!</p>
+              </div>
+            </div> 
+            <ul>
+              <li>
+                <a href="./about-us.html" class="nav__item">about us</a>
+              </li>
+              <li>
+                <a
+                  href="./products.html"
+                  class="nav__item nav__effect"
+                  data-target="mega__products"
+                  >products</a
+                >
+              </li>
+              <li>
+                <a
+                  href="./services.html"
+                  class="nav__item nav__effect"
+                  data-target="mega__services"
+                  >services</a
+                >
+              </li>
+            </ul>
+          </div>
+        </nav>-->
+
+        <!-- mega menu -->
+        <!-- <div class="mega__wrapper" id="mega__products">
+          <div class="mega__menu">
+            <div class="mega__menu_top">
+              <p>products</p>
+              <a href="./products.html">view all</a>
+            </div>
+            <div class="mega__menu_bottom">
+              <div class="left">
+                <a
+                  href="./products/rfid.html"
+                  class="mega__link"
+                  data-img="./assets/images/products/RFID.png"
+                >
+                  <span class="line"></span>
+                  <span class="mega__link_title">rfid</span>
+                </a>
+                <a
+                  href="./products/erp.html"
+                  class="mega__link"
+                  data-img="./assets/images/products/ERP.png"
+                >
+                  <span class="line"></span>
+                  <span class="mega__link_title">erp</span>
+                </a>
+                <a
+                  href="./products/mms.html"
+                  class="mega__link"
+                  data-img="./assets/images/products/MMS.jpg"
+                >
+                  <span class="line"></span>
+                  <span class="mega__link_title">mms</span>
+                </a>
+                <a
+                  href="./products/crm.html"
+                  class="mega__link"
+                  data-img="./assets/images/products/CRM.png"
+                >
+                  <span class="line"></span>
+                  <span class="mega__link_title">crm</span>
+                </a>
+                <a
+                  href="./products/his.html"
+                  class="mega__link"
+                  data-img="./assets/images/products/HIS.png"
+                >
+                  <span class="line"></span>
+                  <span class="mega__link_title">his</span>
+                </a>
+                <a
+                  href="./products/bpms.html"
+                  class="mega__link"
+                  data-img="./assets/images/products/BPMS.png"
+                >
+                  <span class="line"></span>
+                  <span class="mega__link_title">bpms</span>
+                </a>
+                <a
+                  href="./products/modular-design.html"
+                  class="mega__link"
+                  data-img="./assets/images/products/Modular.jpg"
+                >
+                  <span class="line"></span>
+                  <span class="mega__link_title">modular design & tools</span>
+                </a>
+              </div>
+              <div class="right">
+                <img
+                  src="./assets/images/products/MEGA.png"
+                  alt="product"
+                  data-default="./assets/images/products/MEGA.png"
+                />
+              </div>
+            </div>
+          </div>
+        </div>
+        <div class="mega__wrapper" id="mega__services">
+          <div class="mega__menu">
+            <div class="mega__menu_top">
+              <p>services</p>
+              <a href="./services.html">view all</a>
+            </div>
+            <div class="mega__menu_bottom">
+              <div class="mega__link_service">
+                <a href="./mobile-app.html">
+                  <img
+                    src="./assets/images/mega_menu/mobile.png"
+                    alt="service"
+                  />
+                </a>
+                <span>mobile application</span>
+                <span class="mega__menu_view"> view </span>
+              </div>
+              <div class="mega__link_service">
+                <a href="./web-design.html">
+                  <img
+                    src="./assets/images/mega_menu/design.png"
+                    alt="service"
+                  />
+                </a>
+                <span>website design</span>
+                <span class="mega__menu_view"> view </span>
+              </div>
+              <div class="mega__link_service">
+                <a href="./web-service.html">
+                  <img
+                    src="./assets/images/mega_menu/service.png"
+                    alt="service"
+                  />
+                </a>
+                <span>web services</span>
+                <span class="mega__menu_view"> view </span>
+              </div>
+            </div>
+          </div>
+        </div> -->
+
+        <!-- responsive - mobile -->
+        <!--<div class="responsive__btn">
+          <div class="languages">
+            <span class="language__title">En</span>
+            <div class="languages__list">
+              <span>En</span>
+              <span>GE</span>
+              <span>TR</span>
+              <span>AR</span>
+            </div>
+          </div> 
+          <button class="btn__bars open__menu_mobile">
+            <svg
+              width="42"
+              height="28"
+              viewBox="0 0 42 28"
+              fill="none"
+              xmlns="http://www.w3.org/2000/svg"
+            >
+              <path
+                d="M2.33334 28C1.67223 28 1.11767 27.776 0.669675 27.328C0.221675 26.88 -0.00154748 26.3262 8.07382e-06 25.6667C8.07382e-06 25.0056 0.224008 24.451 0.672008 24.003C1.12001 23.555 1.67379 23.3318 2.33334 23.3333H39.6667C40.3278 23.3333 40.8823 23.5573 41.3303 24.0053C41.7783 24.4533 42.0016 25.0071 42 25.6667C42 26.3278 41.776 26.8823 41.328 27.3303C40.88 27.7783 40.3262 28.0016 39.6667 28H2.33334ZM2.33334 16.3333C1.67223 16.3333 1.11767 16.1093 0.669675 15.6613C0.221675 15.2133 -0.00154748 14.6596 8.07382e-06 14C8.07382e-06 13.3389 0.224008 12.7843 0.672008 12.3363C1.12001 11.8883 1.67379 11.6651 2.33334 11.6667H39.6667C40.3278 11.6667 40.8823 11.8907 41.3303 12.3387C41.7783 12.7867 42.0016 13.3405 42 14C42 14.6611 41.776 15.2157 41.328 15.6637C40.88 16.1117 40.3262 16.3349 39.6667 16.3333H2.33334ZM2.33334 4.66667C1.67223 4.66667 1.11767 4.44267 0.669675 3.99467C0.221675 3.54667 -0.00154748 2.9929 8.07382e-06 2.33334C8.07382e-06 1.67223 0.224008 1.11768 0.672008 0.669675C1.12001 0.221675 1.67379 -0.00154748 2.33334 8.0738e-06H39.6667C40.3278 8.0738e-06 40.8823 0.224008 41.3303 0.672008C41.7783 1.12001 42.0016 1.67379 42 2.33334C42 2.99445 41.776 3.54901 41.328 3.99701C40.88 4.44501 40.3262 4.66823 39.6667 4.66667H2.33334Z"
+                fill="#212F45"
+              />
+            </svg>
+          </button>
+        </div>
+      </div>-->
+        <!-- responsive - menu -->
+        <!--<div class="responsive__navbar">
+        <div class="nav__header">
+          <div class="logo">
+            <img src="./assets/images/Logo.png" alt="logo" />
+          </div>
+          <button class="close__menu_mobile">
+            <svg
+              width="35"
+              height="35"
+              viewBox="0 0 35 35"
+              fill="none"
+              xmlns="http://www.w3.org/2000/svg"
+            >
+              <path
+                d="M2.625 2.625L32.375 32.375"
+                stroke="#212F45"
+                stroke-width="4"
+                stroke-linecap="round"
+              />
+              <path
+                d="M2.625 32.375L32.375 2.625"
+                stroke="#212F45"
+                stroke-width="4"
+                stroke-linecap="round"
+              />
+            </svg>
+          </button>
+        </div>
+        <div class="search__box_mobile">
+          <svg
+            width="25"
+            height="25"
+            viewBox="0 0 20 20"
+            fill="none"
+            xmlns="http://www.w3.org/2000/svg"
+            class="search__icon"
+          >
+            <path
+              d="M15.5286 14.2324L19.4547 18.1576L18.1576 19.4547L14.2324 15.5286C12.7719 16.6994 10.9553 17.3362 9.0835 17.3335C4.5295 17.3335 0.833496 13.6375 0.833496 9.0835C0.833496 4.5295 4.5295 0.833496 9.0835 0.833496C13.6375 0.833496 17.3335 4.5295 17.3335 9.0835C17.3362 10.9553 16.6994 12.7719 15.5286 14.2324ZM13.6897 13.5522C14.8531 12.3559 15.5028 10.7522 15.5002 9.0835C15.5002 5.53875 12.6282 2.66683 9.0835 2.66683C5.53875 2.66683 2.66683 5.53875 2.66683 9.0835C2.66683 12.6282 5.53875 15.5002 9.0835 15.5002C10.7522 15.5028 12.3559 14.8531 13.5522 13.6897L13.6897 13.5522Z"
+              fill="#212F45"
+            />
+          </svg>
+          <input type="text" placeholder="search..." onkeyup="emptyInputHandler(this)"/>
+          <svg
+            width="52"
+            height="20"
+            viewBox="0 0 52 20"
+            fill="none"
+            xmlns="http://www.w3.org/2000/svg"
+            class="arrow__icon btn__search_mobile"
+          >
+            <path
+              d="M51.7439 10.4969L43.174 18.9344C43.0387 19.0586 42.8596 19.1262 42.6746 19.123C42.4896 19.1198 42.313 19.046 42.1822 18.9172C42.0513 18.7884 41.9764 18.6146 41.9731 18.4324C41.9699 18.2502 42.0385 18.074 42.1647 17.9407L49.5145 10.7032H1.21905C1.02964 10.7032 0.847993 10.6291 0.714064 10.4972C0.580134 10.3654 0.504893 10.1865 0.504893 10C0.504893 9.81356 0.580134 9.63472 0.714064 9.50286C0.847993 9.37099 1.02964 9.29691 1.21905 9.29691H49.5145L42.1647 2.05941C42.0385 1.92613 41.9699 1.74983 41.9731 1.56767C41.9764 1.38552 42.0513 1.21172 42.1822 1.08289C42.313 0.954069 42.4896 0.880277 42.6746 0.877063C42.8596 0.873849 43.0387 0.941464 43.174 1.06566L51.7439 9.50316C51.8776 9.635 51.9527 9.81371 51.9527 10C51.9527 10.1864 51.8776 10.3651 51.7439 10.4969Z"
+              fill="#F0C85B"
+            />
+          </svg>
+        </div>
+        <nav class="nav">
+          <ul>
+            <li>
+              <a href="./about-us.html" class="nav__item">about us</a>
+            </li>
+            <li>
+              <a
+                href="javascript:;"
+                class="nav__item nav__products"
+                data-target="products__submenu"
+                >products</a
+              >
+            </li>
+            <li>
+              <a
+                href="javascript:;"
+                class="nav__item nav__services"
+                data-target="services__submenu"
+                >services</a
+              >
+            </li>
+            <li>
+              <a href="./careers.html" class="nav__item">careers</a>
+            </li>
+            <li>
+              <a href="javascript:;" class="nav__item" onclick="openContactFormHandler()">contact us</a>
+            </li>
+          </ul>
+        </nav>
+        <div class="nav__footer">
+          <div class="login">
+            <svg
+              width="21"
+              height="20"
+              viewBox="0 0 21 20"
+              fill="none"
+              xmlns="http://www.w3.org/2000/svg"
+            >
+              <path
+                d="M2.39284 19.0819L2.31482 18.9842L2.39284 19.0819C2.48041 19.0119 2.55316 18.9252 2.60685 18.8268C4.27782 15.9401 7.22846 14.2188 10.5002 14.2188C13.772 14.2188 16.7227 15.9401 18.3936 18.8269C18.4473 18.9252 18.5201 19.0119 18.6076 19.0819C18.6956 19.1522 18.7969 19.2042 18.9053 19.2347C19.0138 19.2653 19.1272 19.2739 19.239 19.2599C19.3508 19.2459 19.4587 19.2096 19.5563 19.1533C19.6538 19.0969 19.7391 19.0216 19.8071 18.9317C19.8751 18.8419 19.9244 18.7393 19.9521 18.6301C19.9798 18.5209 19.9853 18.4072 19.9684 18.2958C19.9516 18.185 19.9128 18.0786 19.8544 17.9829C18.5176 15.6726 16.4813 13.9925 14.099 13.1476C15.2309 12.4104 16.111 11.3418 16.617 10.0847C17.1562 8.74517 17.2408 7.26569 16.8578 5.87345C16.4747 4.48122 15.6453 3.2532 14.4967 2.378C13.3482 1.5028 11.9442 1.02881 10.5002 1.02881C9.05626 1.02881 7.65221 1.5028 6.50371 2.378C5.3552 3.2532 4.52574 4.48122 4.1427 5.87345C3.75966 7.26569 3.84423 8.74517 4.38341 10.0847C4.8894 11.3418 5.7695 12.4103 6.90136 13.1476C4.51909 13.9916 2.48283 15.6718 1.14608 17.9829C1.08766 18.0786 1.04889 18.185 1.03204 18.2958C1.01511 18.4072 1.02066 18.5209 1.04836 18.6301C1.07607 18.7393 1.12537 18.8419 1.19335 18.9317C1.26133 19.0216 1.34662 19.0969 1.44419 19.1533C1.54176 19.2096 1.64962 19.2459 1.76142 19.2599C1.87322 19.2739 1.98669 19.2653 2.09514 19.2347C2.20359 19.2042 2.30481 19.1522 2.39284 19.0819ZM5.59398 7.62487C5.594 6.65455 5.88175 5.70603 6.42083 4.89924C6.95994 4.09241 7.72619 3.46356 8.62269 3.09222C9.51919 2.72088 10.5057 2.62372 11.4574 2.81302C12.4091 3.00233 13.2833 3.46961 13.9695 4.15576C14.6556 4.84191 15.1229 5.71612 15.3122 6.66784C15.5015 7.61956 15.4044 8.60604 15.033 9.50254C14.6617 10.399 14.0328 11.1653 13.226 11.7044C12.4192 12.2435 11.4707 12.5312 10.5004 12.5313C9.19954 12.5299 7.95239 12.0125 7.03256 11.0927C6.11274 10.1728 5.59537 8.9257 5.59398 7.62487Z"
+                fill="white"
+                stroke="white"
+                stroke-width="0.25"
+              />
+            </svg>
+            <span>login</span>
+          </div>
+          <span>or</span>
+          <div class="request__account">
+            <p><span onclick="openRequestFormHandler()">submit a request</span> to create an account!</p>
+          </div>
+          <div class="social">
+            <a
+              href="https://www.linkedin.com/company/futurewavesco/"
+              target="_blank"
+              class="contact__info_link"
+            >
+              <svg
+                width="24"
+                height="24"
+                viewBox="0 0 24 24"
+                fill="none"
+                xmlns="http://www.w3.org/2000/svg"
+              >
+                <path
+                  d="M4 6C5.10457 6 6 5.10457 6 4C6 2.89543 5.10457 2 4 2C2.89543 2 2 2.89543 2 4C2 5.10457 2.89543 6 4 6Z"
+                  fill="white"
+                />
+                <path
+                  d="M4 10V20"
+                  stroke="white"
+                  stroke-width="3"
+                  stroke-linecap="round"
+                />
+                <path
+                  d="M10 10V20"
+                  stroke="white"
+                  stroke-width="3"
+                  stroke-linecap="round"
+                />
+                <path
+                  d="M10 15C10 12.2386 12.2386 10 15 10C17.7614 10 20 12.2386 20 15V20"
+                  stroke="white"
+                  stroke-width="3"
+                  stroke-linecap="round"
+                />
+              </svg>
+            </a>
+            <a
+              href="https://twitter.com/futurewavesco?s=11"
+              target="_blank"
+              class="contact__info_link"
+            >
+              <svg
+                width="24"
+                height="24"
+                viewBox="0 0 24 24"
+                fill="none"
+                xmlns="http://www.w3.org/2000/svg"
+              >
+                <path
+                  d="M4.59258 4.98439C4.77363 4.96335 4.95699 4.99219 5.12284 5.0678C5.28869 5.14342 5.43072 5.26292 5.53358 5.41339C7.00958 7.57239 8.78158 8.47039 10.7486 8.67439C10.8446 7.83339 11.0716 7.00239 11.4986 6.27039C12.1246 5.19639 13.1426 4.40639 14.5966 4.11439C16.6066 3.71039 18.1366 4.43839 19.0236 5.32939L20.8156 4.99439C21.0031 4.95926 21.1968 4.9785 21.3737 5.04984C21.5506 5.12119 21.7035 5.24166 21.8142 5.39704C21.9249 5.55242 21.9888 5.73623 21.9985 5.92677C22.0081 6.11731 21.963 6.30663 21.8686 6.47239L20.1486 9.49439C20.3056 13.8554 19.0936 16.8994 16.5096 18.9964C15.1396 20.1084 13.1776 20.7394 11.0246 20.9344C8.85458 21.1304 6.40158 20.8934 3.96358 20.1814C3.75527 20.1206 3.57238 19.9938 3.4425 19.8199C3.31263 19.6461 3.24282 19.4347 3.24361 19.2178C3.2444 19.0008 3.31575 18.7899 3.44689 18.617C3.57802 18.4442 3.76183 18.3186 3.97058 18.2594C5.19658 17.9104 6.13058 17.6094 6.97358 17.0824C5.77458 16.4464 4.89158 15.6144 4.26658 14.6664C3.39858 13.3484 3.07658 11.8784 3.01258 10.5534C2.94858 9.22839 3.13958 8.00039 3.34158 7.11539C3.45658 6.61039 3.59058 6.10439 3.77558 5.62039C3.84084 5.44978 3.95158 5.30031 4.09578 5.18818C4.23999 5.07606 4.41115 5.00558 4.59258 4.98439Z"
+                  fill="white"
+                />
+              </svg>
+            </a>
+            <a href="https://wa.me/message/FZVH5RLLWEGYJ1" class="contact__info_link">
+              <svg
+                width="21"
+                height="21"
+                viewBox="0 0 21 21"
+                fill="none"
+                xmlns="http://www.w3.org/2000/svg"
+              >
+                <path
+                  d="M1 18.9997L2.65 15.1997C1.38766 13.4078 0.822667 11.2168 1.06104 9.03783C1.29942 6.8589 2.32479 4.84186 3.94471 3.36525C5.56463 1.88863 7.66775 1.05394 9.85938 1.01782C12.051 0.98171 14.1805 1.74665 15.8482 3.1691C17.5159 4.59154 18.6071 6.5737 18.9172 8.74359C19.2272 10.9135 18.7347 13.1219 17.5321 14.9545C16.3295 16.7871 14.4994 18.1177 12.3854 18.6968C10.2713 19.2759 8.01863 19.0636 6.05 18.0997L1 18.9997Z"
+                  stroke="white"
+                  stroke-width="2"
+                  stroke-linecap="round"
+                  stroke-linejoin="round"
+                />
+                <path
+                  d="M7 8C7 8.13261 7.05268 8.25979 7.14645 8.35355C7.24021 8.44732 7.36739 8.5 7.5 8.5C7.63261 8.5 7.75979 8.44732 7.85355 8.35355C7.94732 8.25979 8 8.13261 8 8V7C8 6.86739 7.94732 6.74021 7.85355 6.64645C7.75979 6.55268 7.63261 6.5 7.5 6.5C7.36739 6.5 7.24021 6.55268 7.14645 6.64645C7.05268 6.74021 7 6.86739 7 7V8ZM7 8C7 9.32608 7.52678 10.5979 8.46447 11.5355C9.40215 12.4732 10.6739 13 12 13M12 13H13C13.1326 13 13.2598 12.9473 13.3536 12.8536C13.4473 12.7598 13.5 12.6326 13.5 12.5C13.5 12.3674 13.4473 12.2402 13.3536 12.1464C13.2598 12.0527 13.1326 12 13 12H12C11.8674 12 11.7402 12.0527 11.6464 12.1464C11.5527 12.2402 11.5 12.3674 11.5 12.5C11.5 12.6326 11.5527 12.7598 11.6464 12.8536C11.7402 12.9473 11.8674 13 12 13Z"
+                  stroke="white"
+                  stroke-width="2"
+                  stroke-linecap="round"
+                  stroke-linejoin="round"
+                />
+              </svg>
+            </a>
+            <a
+              href="https://instagram.com/futurewavesco"
+              target="_blank"
+              class="contact__info_link"
+            >
+              <svg
+                width="20"
+                height="20"
+                viewBox="0 0 20 20"
+                fill="none"
+                xmlns="http://www.w3.org/2000/svg"
+              >
+                <path
+                  d="M14.017 0H5.947C4.37015 0.00185307 2.85844 0.629143 1.74353 1.74424C0.628623 2.85933 0.00158794 4.37115 0 5.948L0 14.018C0.00185307 15.5948 0.629143 17.1066 1.74424 18.2215C2.85933 19.3364 4.37115 19.9634 5.948 19.965H14.018C15.5948 19.9631 17.1066 19.3359 18.2215 18.2208C19.3364 17.1057 19.9634 15.5938 19.965 14.017V5.947C19.9631 4.37015 19.3359 2.85844 18.2208 1.74353C17.1057 0.628623 15.5938 0.00158794 14.017 0ZM17.957 14.017C17.957 14.5344 17.8551 15.0468 17.6571 15.5248C17.4591 16.0028 17.1689 16.4371 16.803 16.803C16.4371 17.1689 16.0028 17.4591 15.5248 17.6571C15.0468 17.8551 14.5344 17.957 14.017 17.957H5.947C4.90222 17.9567 3.90032 17.5415 3.16165 16.8026C2.42297 16.0638 2.008 15.0618 2.008 14.017V5.947C2.00827 4.90222 2.42349 3.90032 3.16235 3.16165C3.90122 2.42297 4.90322 2.008 5.948 2.008H14.018C15.0628 2.00827 16.0647 2.42349 16.8034 3.16235C17.542 3.90122 17.957 4.90322 17.957 5.948V14.017Z"
+                  fill="white"
+                />
+                <path
+                  d="M9.98231 4.81836C8.61374 4.82048 7.30184 5.36514 6.33421 6.33297C5.36658 7.30079 4.82216 8.61279 4.82031 9.98136C4.8219 11.3503 5.36634 12.6627 6.33421 13.6308C7.30209 14.5988 8.61439 15.1435 9.98331 15.1454C11.3524 15.1438 12.665 14.5992 13.6331 13.6311C14.6012 12.663 15.1457 11.3505 15.1473 9.98136C15.1452 8.61244 14.6003 7.30024 13.632 6.33255C12.6637 5.36486 11.3512 4.82068 9.98231 4.81936V4.81836ZM9.98231 13.1374C9.14555 13.1374 8.34307 12.805 7.75139 12.2133C7.15971 11.6216 6.82731 10.8191 6.82731 9.98236C6.82731 9.1456 7.15971 8.34311 7.75139 7.75144C8.34307 7.15976 9.14555 6.82736 9.98231 6.82736C10.8191 6.82736 11.6216 7.15976 12.2132 7.75144C12.8049 8.34311 13.1373 9.1456 13.1373 9.98236C13.1373 10.8191 12.8049 11.6216 12.2132 12.2133C11.6216 12.805 10.8191 13.1374 9.98231 13.1374Z"
+                  fill="white"
+                />
+                <path
+                  d="M15.1589 6.09509C15.8421 6.09509 16.3959 5.54127 16.3959 4.85809C16.3959 4.17492 15.8421 3.62109 15.1589 3.62109C14.4757 3.62109 13.9219 4.17492 13.9219 4.85809C13.9219 5.54127 14.4757 6.09509 15.1589 6.09509Z"
+                  fill="white"
+                />
+              </svg>
+            </a>
+            <a
+              href="https://t.me/futurewavesco"
+              target="_blank"
+              class="contact__info_link"
+            >
+              <svg
+                width="20"
+                height="18"
+                viewBox="0 0 20 18"
+                fill="none"
+                xmlns="http://www.w3.org/2000/svg"
+              >
+                <path
+                  d="M13 7L9 11L15 17L19 1L1 8L5 10L7 16L10 12"
+                  stroke="white"
+                  stroke-width="2"
+                  stroke-linecap="round"
+                  stroke-linejoin="round"
+                />
+              </svg>
+            </a>
+            <a
+              href="https://youtube.com/@FutureWavesCo"
+              target="_blank"
+              class="contact__info_link"
+            >
+              <svg
+                width="22"
+                height="18"
+                viewBox="0 0 22 18"
+                fill="none"
+                xmlns="http://www.w3.org/2000/svg"
+              >
+                <path
+                  d="M14.4163 8.37563L9.91625 5.37563C9.80327 5.30025 9.67195 5.25697 9.53629 5.2504C9.40064 5.24382 9.26575 5.27421 9.14601 5.33831C9.02628 5.40241 8.9262 5.49783 8.85645 5.61436C8.7867 5.7309 8.74991 5.86419 8.75 6V12C8.74991 12.1358 8.7867 12.2691 8.85645 12.3856C8.9262 12.5022 9.02628 12.5976 9.14601 12.6617C9.26575 12.7258 9.40064 12.7562 9.53629 12.7496C9.67195 12.743 9.80327 12.6998 9.91625 12.6244L14.4163 9.62438C14.5191 9.55592 14.6035 9.46309 14.6618 9.35417C14.7202 9.24524 14.7507 9.12358 14.7507 9C14.7507 8.87643 14.7202 8.75477 14.6618 8.64584C14.6035 8.53691 14.5191 8.44409 14.4163 8.37563ZM10.25 10.5984V7.40625L12.6481 9L10.25 10.5984ZM20.9684 3.5175C20.8801 3.17189 20.7109 2.85224 20.4747 2.58491C20.2385 2.31758 19.9421 2.11024 19.61 1.98C16.3962 0.738753 11.2812 0.750004 11 0.750004C10.7188 0.750004 5.60375 0.738753 2.39 1.98C2.0579 2.11024 1.76153 2.31758 1.52534 2.58491C1.28915 2.85224 1.1199 3.17189 1.03156 3.5175C0.78875 4.45313 0.5 6.16313 0.5 9C0.5 11.8369 0.78875 13.5469 1.03156 14.4825C1.11977 14.8283 1.28895 15.1481 1.52515 15.4156C1.76136 15.6831 2.0578 15.8906 2.39 16.0209C5.46875 17.2088 10.2875 17.25 10.9381 17.25H11.0619C11.7125 17.25 16.5341 17.2088 19.61 16.0209C19.9422 15.8906 20.2386 15.6831 20.4748 15.4156C20.711 15.1481 20.8802 14.8283 20.9684 14.4825C21.2113 13.545 21.5 11.8369 21.5 9C21.5 6.16313 21.2113 4.45313 20.9684 3.5175ZM19.5163 14.1113C19.4877 14.2263 19.4323 14.3329 19.3545 14.4224C19.2768 14.5118 19.179 14.5816 19.0691 14.6259C16.1019 15.7716 11.0553 15.7509 11.0066 15.7509H11C10.9494 15.7509 5.90656 15.7697 2.9375 14.6259C2.8276 14.5816 2.72977 14.5118 2.65204 14.4224C2.57431 14.3329 2.51888 14.2263 2.49031 14.1113C2.2625 13.2553 2 11.6784 2 9C2 6.32157 2.2625 4.74469 2.48375 3.89344C2.51179 3.77774 2.56697 3.67037 2.64473 3.58022C2.7225 3.49007 2.8206 3.41972 2.93094 3.375C5.79219 2.26969 10.5866 2.25 10.9794 2.25H11.0047C11.0553 2.25 16.1028 2.23313 19.0672 3.375C19.1771 3.41936 19.2749 3.48913 19.3526 3.57859C19.4304 3.66806 19.4858 3.77467 19.5144 3.88969C19.7375 4.74469 20 6.32157 20 9C20 11.6784 19.7375 13.2553 19.5163 14.1066V14.1113Z"
+                  fill="white"
+                />
+              </svg>
+            </a>
+          </div>
+        </div>
+
+        <!-- products submenu -->
+        <!--<div class="products__submenu">
+          <div class="top__submenu">
+            <h4 class="title">products</h4>
+            <ul>
+              <li>
+                <a href="./products/rfid.html">rfid</a>
+              </li>
+              <li>
+                <a href="./products/erp.html">erp</a>
+              </li>
+              <li>
+                <a href="./products/mms.html">mms</a>
+              </li>
+              <li>
+                <a href="./products/crm.html">crm</a>
+              </li>
+              <li>
+                <a href="./products/his.html">his</a>
+              </li>
+              <li>
+                <a href="./products/bpms.html">bpms</a>
+              </li>
+              <li>
+                <a href="./products/rfid.html">modular desing & tools</a>
+              </li>
+            </ul>
+          </div>
+          <div class="bottom__submenu">
+            <a href="./products.html" class="link__view_more">view all</a>
+            <button
+              class="close__products_submenu"
+              data-target="products__submenu"
+            >
+              back
+              <svg
+                width="19"
+                height="19"
+                viewBox="0 0 19 19"
+                fill="none"
+                xmlns="http://www.w3.org/2000/svg"
+              >
+                <path
+                  d="M15.7787 6.54561C14.5354 5.57782 13.0074 5.04981 11.4337 5.04248V5.01716H11.3337H3.27176L6.65065 1.68082L6.6511 1.68037C6.791 1.54047 6.8696 1.35071 6.8696 1.15286C6.8696 0.955 6.791 0.765246 6.6511 0.62534C6.51119 0.485434 6.32144 0.406836 6.12358 0.406836C5.92583 0.406836 5.73617 0.485353 5.59628 0.625124C5.59621 0.625196 5.59614 0.625268 5.59606 0.62534L0.485355 5.67855L0.413253 5.74984L0.485535 5.82095L5.59631 10.8487C5.59636 10.8487 5.5964 10.8488 5.59644 10.8488C5.73555 10.9869 5.9238 11.064 6.1198 11.0633C6.31586 11.0627 6.50362 10.9841 6.64176 10.845C6.77991 10.7059 6.85713 10.5176 6.85644 10.3215C6.85574 10.1254 6.77719 9.93768 6.63807 9.79953L6.63761 9.79908L3.26666 6.49494L11.3273 6.49494L11.3279 6.49494C12.8367 6.48657 14.2873 7.07665 15.3618 8.13587C16.4361 9.19489 17.0469 10.6365 17.0604 12.145C17.053 13.1903 16.7558 14.2131 16.2017 15.0996C15.6475 15.9863 14.8582 16.7018 13.9215 17.1665L13.9208 17.1668C13.7396 17.2584 13.6021 17.4183 13.5387 17.6112C13.5074 17.7067 13.4951 17.8075 13.5027 17.9078C13.5102 18.0081 13.5374 18.1059 13.5828 18.1956C13.6282 18.2853 13.6907 18.3653 13.767 18.4308C13.8432 18.4964 13.9317 18.5463 14.0272 18.5777C14.2201 18.6411 14.4303 18.6252 14.6116 18.5336C16.0482 17.8087 17.1973 16.6189 17.8718 15.1579C18.5463 13.6969 18.7066 12.0506 18.3266 10.4869C17.9466 8.92318 17.0486 7.53409 15.7787 6.54561Z"
+                  fill="#212F45"
+                  stroke="#212F45"
+                  stroke-width="0.2"
+                />
+              </svg>
+            </button>
+          </div>
+        </div>-->
+
+        <!-- services submenu -->
+        <!--<div class="services__submenu">
+          <div class="top__submenu">
+            <h4 class="title">services</h4>
+          <ul>
+            <li>
+              <a href="./mobile-app.html">mobile application</a>
+            </li>
+            <li>
+              <a href="./web-design.html">website design</a>
+            </li>
+            <li>
+              <a href="./web-service.html">web services</a>
+            </li>
+          </ul>
+          </div>
+          <div class="bottom__submenu">
+            <a href="./services.html" class="link__view_more">view all</a>
+            <button
+              class="close__services_submenu"
+              data-target="services__submenu"
+            >
+              back
+              <svg
+                width="19"
+                height="19"
+                viewBox="0 0 19 19"
+                fill="none"
+                xmlns="http://www.w3.org/2000/svg"
+              >
+                <path
+                  d="M15.7787 6.54561C14.5354 5.57782 13.0074 5.04981 11.4337 5.04248V5.01716H11.3337H3.27176L6.65065 1.68082L6.6511 1.68037C6.791 1.54047 6.8696 1.35071 6.8696 1.15286C6.8696 0.955 6.791 0.765246 6.6511 0.62534C6.51119 0.485434 6.32144 0.406836 6.12358 0.406836C5.92583 0.406836 5.73617 0.485353 5.59628 0.625124C5.59621 0.625196 5.59614 0.625268 5.59606 0.62534L0.485355 5.67855L0.413253 5.74984L0.485535 5.82095L5.59631 10.8487C5.59636 10.8487 5.5964 10.8488 5.59644 10.8488C5.73555 10.9869 5.9238 11.064 6.1198 11.0633C6.31586 11.0627 6.50362 10.9841 6.64176 10.845C6.77991 10.7059 6.85713 10.5176 6.85644 10.3215C6.85574 10.1254 6.77719 9.93768 6.63807 9.79953L6.63761 9.79908L3.26666 6.49494L11.3273 6.49494L11.3279 6.49494C12.8367 6.48657 14.2873 7.07665 15.3618 8.13587C16.4361 9.19489 17.0469 10.6365 17.0604 12.145C17.053 13.1903 16.7558 14.2131 16.2017 15.0996C15.6475 15.9863 14.8582 16.7018 13.9215 17.1665L13.9208 17.1668C13.7396 17.2584 13.6021 17.4183 13.5387 17.6112C13.5074 17.7067 13.4951 17.8075 13.5027 17.9078C13.5102 18.0081 13.5374 18.1059 13.5828 18.1956C13.6282 18.2853 13.6907 18.3653 13.767 18.4308C13.8432 18.4964 13.9317 18.5463 14.0272 18.5777C14.2201 18.6411 14.4303 18.6252 14.6116 18.5336C16.0482 17.8087 17.1973 16.6189 17.8718 15.1579C18.5463 13.6969 18.7066 12.0506 18.3266 10.4869C17.9466 8.92318 17.0486 7.53409 15.7787 6.54561Z"
+                  fill="#212F45"
+                  stroke="#212F45"
+                  stroke-width="0.2"
+                />
+              </svg>
+            </button>
+          </div>
+        </div>-->
+      </div>
+    </header>
+    <!-- ==== Header End ==== -->
+
+    <!-- ==== Request Form Start ==== -->
+    <div class="request__form">
+      <img src="./assets/images/bg-form.png" alt="" />
+      <div class="request__form_left">
+        <h2 class="request__form_left_title">You are in the right place!</h2>
+        <p class="request__form_left_desc">We are here to help you!</p>
+        <p class="request__form_left_subdesc">
+          Choose the service you need on the right side and write the details in
+          the box
+        </p>
+      </div>
+      <div class="request__form_right">
+        <button class="close__form">
+          <svg
+            width="35"
+            height="35"
+            viewBox="0 0 35 35"
+            fill="none"
+            xmlns="http://www.w3.org/2000/svg"
+          >
+            <path
+              d="M2.625 2.625L32.375 32.375"
+              stroke="#212F45"
+              stroke-width="4"
+              stroke-linecap="round"
+            />
+            <path
+              d="M2.625 32.375L32.375 2.625"
+              stroke="#212F45"
+              stroke-width="4"
+              stroke-linecap="round"
+            />
+          </svg>
+        </button>
+        <a href="./index.html" class="logo">
+          <img src="./assets/images/Logo.png" alt="logo" />
+        </a>
+        <form class="form">
+          <div class="form__container">
+            <div class="page__1 page__form active">
+              <div class="tabs">
+                <button
+                  class="btn__tab active"
+                  type="button"
+                  data-target="form__project"
+                >
+                  START A PROJECT
+                </button>
+                <button class="btn__tab" type="button" data-target="form__ask">
+                  ASK FOR A CONSULTANT
+                </button>
+              </div>
+              <div class="tab__1 form__wrapper active" id="form__project">
+                <div class="form__top">
+                  <div class="input__group">
+                    <input
+                      type="radio"
+                      name="project"
+                      id="select_project_one"
+                    />
+                    <label for="select_project_one"
+                      >Buying ready products</label
+                    >
+                  </div>
+                  <div class="checkbox__group">
+                    <div class="input__group">
+                      <div>
+                        <input
+                          type="radio"
+                          name="project_item"
+                          value="rfid"
+                          id="rfid"
+                          class="check_box"
+                        />
+                        <label for="rfid">RFID</label>
+                      </div>
+                      <div>
+                        <input
+                          type="radio"
+                          name="project_item"
+                          value="mms"
+                          id="mms"
+                          class="check_box"
+                        />
+                        <label for="mms">MMS</label>
+                      </div>
+                      <div>
+                        <input
+                          type="radio"
+                          name="project_item"
+                          value="bpms"
+                          id="bpms"
+                          class="check_box"
+                        />
+                        <label for="bpms">BPMS</label>
+                      </div>
+                    </div>
+                    <div class="input__group">
+                      <div>
+                        <input
+                          type="radio"
+                          name="project_item"
+                          value="erp"
+                          id="erp"
+                          class="check_box"
+                        />
+                        <label for="erp">ERP</label>
+                      </div>
+                      <div>
+                        <input
+                          type="radio"
+                          name="project_item"
+                          value="crm"
+                          id="crm"
+                          class="check_box"
+                        />
+                        <label for="crm">CRM</label>
+                      </div>
+                      <div>
+                        <input
+                          type="radio"
+                          name="project_item"
+                          value="his"
+                          id="his"
+                          class="check_box"
+                        />
+                        <label for="his">HIS</label>
+                      </div>
+                    </div>
+                  </div>
+                  <div class="check__select">
+                    <div class="input__group">
+                      <input
+                        type="radio"
+                        name="project_item"
+                        id="modular"
+                        class="check_box"
+                      />
+                      <label for="modular">Modular design & tools</label>
+                    </div>
+                    <div class="select__input">
+                      <div id="select__modular">
+                        <span id="select__title">Select the product</span>
+                        <div class="select__options">
+                          <span onclick="selectHandler(this)"
+                            >Financial System</span
+                          >
+                          <span onclick="selectHandler(this)"
+                            >Ticket Reservation System</span
+                          >
+                          <span onclick="selectHandler(this)"
+                            >Project Management System</span
+                          >
+                          <span onclick="selectHandler(this)"
+                            >Result Ranking</span
+                          >
+                          <span onclick="selectHandler(this)"
+                            >Customers Club</span
+                          >
+                          <span onclick="selectHandler(this)"
+                            >Mailroom Management</span
+                          >
+                          <span onclick="selectHandler(this)"
+                            >Property System</span
+                          >
+                          <span onclick="selectHandler(this)"
+                            >Para-Clinical Services</span
+                          >
+                          <span onclick="selectHandler(this)">Automation</span>
+                          <span onclick="selectHandler(this)"
+                            >Welfare Service System</span
+                          >
+                          <span onclick="selectHandler(this)"
+                            >Production Formulation</span
+                          >
+                          <span onclick="selectHandler(this)"
+                            >Product Distribution Network</span
+                          >
+                          <span onclick="selectHandler(this)"
+                            >Logistic & Transportation AutoMation System</span
+                          >
+                          <span onclick="selectHandler(this)"
+                            >Payroll Systems</span
+                          >
+                          <span onclick="selectHandler(this)"
+                            >Cashier System</span
+                          >
+                          <span onclick="selectHandler(this)"
+                            >Production System</span
+                          >
+                          <span onclick="selectHandler(this)"
+                            >Treasury Management System</span
+                          >
+                          <span onclick="selectHandler(this)"
+                            >Product n. 18</span
+                          >
+                          <span onclick="selectHandler(this)"
+                            >Pool Management System</span
+                          >
+                          <span onclick="selectHandler(this)"
+                            >Ticketing System</span
+                          >
+                          <span onclick="selectHandler(this)">Forum</span>
+                          <span onclick="selectHandler(this)"
+                            >Marketing Management System</span
+                          >
+                          <span onclick="selectHandler(this)"
+                            >Job Classification System</span
+                          >
+                          <span onclick="selectHandler(this)">Acceptor</span>
+                          <span onclick="selectHandler(this)"
+                            >Regional Sales</span
+                          >
+                          <span onclick="selectHandler(this)"
+                            >Data Management</span
+                          >
+                          <span onclick="selectHandler(this)"
+                            >Internal Trade</span
+                          >
+                          <span onclick="selectHandler(this)"
+                            >Fuel Management System</span
+                          >
+                          <span onclick="selectHandler(this)"
+                            >Personal Information</span
+                          >
+                          <span onclick="selectHandler(this)"
+                            >Hotel Management</span
+                          >
+                          <span onclick="selectHandler(this)"
+                            >Total Price Calculator</span
+                          >
+                          <span onclick="selectHandler(this)"
+                            >Gym Management</span
+                          >
+                          <span onclick="selectHandler(this)"
+                            >Product Tracking</span
+                          >
+                          <span onclick="selectHandler(this)"
+                            >Warehouse Storage System</span
+                          >
+                          <span onclick="selectHandler(this)"
+                            >Transaction Management</span
+                          >
+                          <span onclick="selectHandler(this)"
+                            >Capillary Distribution</span
+                          >
+                          <span onclick="selectHandler(this)"
+                            >International Trading System</span
+                          >
+                        </div>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+                <div class="form__bottom">
+                  <div class="input__group">
+                    <input
+                      type="radio"
+                      name="project"
+                      id="select_project_two"
+                    />
+                    <label for="select_project_two"
+                      >Registering an order to make a new product or
+                      service</label
+                    >
+                  </div>
+                  <div class="checkbox__group">
+                    <div class="input__group">
+                      <div>
+                        <input
+                          type="radio"
+                          name="project_item"
+                          id="mobile__app_check"
+                          class="check_box"
+                        />
+                        <label for="mobile__app_check"
+                          >Mobile Application</label
+                        >
+                      </div>
+                      <div class="select__input" id="select__mobile">
+                        <div>
+                          <span id="select__title_mobile"
+                            >Select the product</span
+                          >
+                          <div class="select__options_mobile">
+                            <div class="select__top">
+                              <div class="select__mobile_tab">
+                                <span></span>
+                                <p>Android</p>
+                              </div>
+                              <div class="select__mobile_tab">
+                                <span></span>
+                                <p>IOS</p>
+                              </div>
+                              <div class="select__mobile_tab">
+                                <span></span>
+                                <p>PWA</p>
+                              </div>
+                            </div>
+                            <span onclick="selectMobileProduct(this)"
+                              >Native</span
+                            >
+                            <span onclick="selectMobileProduct(this)"
+                              >Hybrid</span
+                            >
+                            <span onclick="selectMobileProduct(this)"
+                              >Cross-Platform</span
+                            >
+                            <span onclick="selectMobileProduct(this)">All</span>
+                          </div>
+                        </div>
+                      </div>
+                    </div>
+                    <div class="input__group">
+                      <div>
+                        <input
+                          type="radio"
+                          name="project_item"
+                          id="web__service_check"
+                          class="check_box"
+                        />
+                        <label for="web__service_check">Web Services</label>
+                      </div>
+                      <div class="select__input" id="select__service">
+                        <div>
+                          <span id="select__title_service"
+                            >Select the product</span
+                          >
+                          <div class="select__options_service">
+                            <span onclick="selectServiceProduct(this)"
+                              >Web hosting</span
+                            >
+                            <span onclick="selectServiceProduct(this)"
+                              >Domain registration</span
+                            >
+                            <span onclick="selectServiceProduct(this)"
+                              >SSL certification</span
+                            >
+                            <span onclick="selectServiceProduct(this)"
+                              >Website maintenance and support</span
+                            >
+                            <span onclick="selectServiceProduct(this)"
+                              >API</span
+                            >
+                            <span onclick="selectServiceProduct(this)"
+                              >All</span
+                            >
+                          </div>
+                        </div>
+                      </div>
+                    </div>
+                    <div class="input__group">
+                      <div>
+                        <input
+                          type="radio"
+                          name="project_item"
+                          id="web__design_check"
+                          class="check_box"
+                        />
+                        <label for="web__design_check">Website Design</label>
+                      </div>
+                      <div class="select__input" id="select__design">
+                        <div>
+                          <span id="select__title_design"
+                            >Select the product</span
+                          >
+                          <div class="select__options_design">
+                            <span onclick="selectDesignProduct(this)"
+                              >Static websites</span
+                            >
+                            <span onclick="selectDesignProduct(this)"
+                              >Dynamic websites</span
+                            >
+                            <span onclick="selectDesignProduct(this)"
+                              >Content management systems (CMS)</span
+                            >
+                            <span onclick="selectDesignProduct(this)">All</span>
+                          </div>
+                        </div>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+                <div class="textarea">
+                  <textarea
+                    name=""
+                    cols="30"
+                    rows="10"
+                    placeholder="Write a message..."
+                    onkeyup="counterCharacters(this)"
+                  ></textarea>
+                  <span class="counter__text">0/1000</span>
+                </div>
+                <div class="r__form_buttons">
+                  <div class="input__file">
+                    <input type="file" id="file" hidden />
+                    <label for="file"
+                      ><img src="./assets/images/add-file.png" alt="file" /> add
+                      file</label
+                    >
+                  </div>
+                  <button
+                    type="button"
+                    class="next_page disable"
+                    onclick="goToPage(2)"
+                  >
+                    <svg
+                      xmlns="http://www.w3.org/2000/svg"
+                      width="52"
+                      height="20"
+                      viewBox="0 0 52 20"
+                      fill="none"
+                    >
+                      <path
+                        d="M51.7439 10.4969L43.174 18.9344C43.0387 19.0586 42.8596 19.1262 42.6746 19.123C42.4896 19.1197 42.313 19.0459 42.1822 18.9171C42.0513 18.7883 41.9764 18.6145 41.9731 18.4323C41.9699 18.2502 42.0385 18.0739 42.1647 17.9406L49.5145 10.7031H1.21905C1.02964 10.7031 0.847993 10.629 0.714064 10.4972C0.580134 10.3653 0.504893 10.1865 0.504893 9.99998C0.504893 9.8135 0.580134 9.63466 0.714064 9.50279C0.847993 9.37093 1.02964 9.29685 1.21905 9.29685H49.5145L42.1647 2.05935C42.0385 1.92606 41.9699 1.74977 41.9731 1.56761C41.9764 1.38546 42.0513 1.21166 42.1822 1.08283C42.313 0.954008 42.4896 0.880216 42.6746 0.877002C42.8596 0.873788 43.0387 0.941403 43.174 1.0656L51.7439 9.5031C51.8776 9.63494 51.9527 9.81365 51.9527 9.99998C51.9527 10.1863 51.8776 10.365 51.7439 10.4969Z"
+                        fill="#212F45"
+                      />
+                    </svg>
+                  </button>
+                </div>
+              </div>
+              <div class="tab__2 form__wrapper" id="form__ask">
+                <div class="form__top">
+                  <div class="input__group">
+                    <p>
+                      Select the services you need to ask from the consultant:
+                    </p>
+                  </div>
+                  <div class="checkbox__group">
+                    <div class="input__group">
+                      <div>
+                        <input
+                          type="radio"
+                          name="project_item"
+                          id="buy"
+                          class="check_box"
+                        />
+                        <label for="buy">Buy</label>
+                      </div>
+                      <div>
+                        <input
+                          type="radio"
+                          name="project_item"
+                          id="design"
+                          class="check_box"
+                        />
+                        <label for="design">design</label>
+                      </div>
+                      <div>
+                        <input
+                          type="radio"
+                          name="project_item"
+                          id="launch-run"
+                          class="check_box"
+                        />
+                        <label for="launch-run">Launch & Run</label>
+                      </div>
+                      <div>
+                        <input
+                          type="radio"
+                          name="project_item"
+                          id="development"
+                          class="check_box"
+                        />
+                        <label for="development">Development</label>
+                      </div>
+                      <div>
+                        <input
+                          type="radio"
+                          name="project_item"
+                          id="support"
+                          class="check_box"
+                        />
+                        <label for="support">Support</label>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+                <p class="desc__form_ask">your title and message:</p>
+                <div class="textarea text_simple">
+                  <input type="text" placeholder="title..." class="input__el" />
+                  <span class="active__input_line"></span>
+                </div>
+                <div class="textarea">
+                  <textarea
+                    name=""
+                    cols="30"
+                    rows="10"
+                    placeholder="Write a message..."
+                    onkeyup="counterCharacters(this)"
+                  ></textarea>
+                  <span class="active__input_line"></span>
+                  <span class="counter__text">0/1000</span>
+                </div>
+                <div class="r__form_buttons">
+                  <div class="input__file">
+                    <input type="file" id="file" hidden />
+                    <label for="file"
+                      ><img src="./assets/images/add-file.png" alt="file" /> add
+                      file</label
+                    >
+                  </div>
+                  <button type="button" class="next_page disable">
+                    <svg
+                      xmlns="http://www.w3.org/2000/svg"
+                      width="52"
+                      height="20"
+                      viewBox="0 0 52 20"
+                      fill="none"
+                    >
+                      <path
+                        d="M51.7439 10.4969L43.174 18.9344C43.0387 19.0586 42.8596 19.1262 42.6746 19.123C42.4896 19.1197 42.313 19.0459 42.1822 18.9171C42.0513 18.7883 41.9764 18.6145 41.9731 18.4323C41.9699 18.2502 42.0385 18.0739 42.1647 17.9406L49.5145 10.7031H1.21905C1.02964 10.7031 0.847993 10.629 0.714064 10.4972C0.580134 10.3653 0.504893 10.1865 0.504893 9.99998C0.504893 9.8135 0.580134 9.63466 0.714064 9.50279C0.847993 9.37093 1.02964 9.29685 1.21905 9.29685H49.5145L42.1647 2.05935C42.0385 1.92606 41.9699 1.74977 41.9731 1.56761C41.9764 1.38546 42.0513 1.21166 42.1822 1.08283C42.313 0.954008 42.4896 0.880216 42.6746 0.877002C42.8596 0.873788 43.0387 0.941403 43.174 1.0656L51.7439 9.5031C51.8776 9.63494 51.9527 9.81365 51.9527 9.99998C51.9527 10.1863 51.8776 10.365 51.7439 10.4969Z"
+                        fill="#212F45"
+                      />
+                    </svg>
+                  </button>
+                </div>
+              </div>
+            </div>
+
+            <div class="page__2 page__form">
+              <h2 class="page__2_title">your personal information</h2>
+              <div class="row__container">
+                <div class="input__group">
+                  <label for="">name: <span class="star">*</span></label>
+                  <input
+                    type="text"
+                    placeholder="Type something..."
+                    class="input__el"
+                    name="name"
+                  />
+                  <span class="active__input_line"></span>
+                </div>
+                <div class="input__group">
+                  <label for=""
+                    >brand's name: <span class="star">*</span></label
+                  >
+                  <input
+                    type="text"
+                    placeholder="Type something..."
+                    class="input__el"
+                    name="brandName"
+                  />
+                  <span class="active__input_line"></span>
+                </div>
+              </div>
+              <div class="row__container">
+                <div class="input__group">
+                  <label for=""
+                    >field of activity: <span class="star">*</span></label
+                  >
+                  <select
+                    name="activity"
+                    id=""
+                    onchange="selectBoxHandler(this)"
+                  >
+                    <option value="" selected disabled>
+                      select your activity
+                    </option>
+                    <option value="agriculture">Agriculture</option>
+                    <option value="mining">Mining</option>
+                    <option value="construction">Construction</option>
+                  </select>
+                </div>
+              </div>
+              <div class="row__container">
+                <div class="input__group">
+                  <label for=""
+                    >mobile phone number: <span class="star">*</span></label
+                  >
+                  <input
+                    type="text"
+                    placeholder="Type something..."
+                    class="input__el"
+                    name="phoneNumber"
+                  />
+                  <span class="active__input_line"></span>
+                </div>
+                <div class="input__group">
+                  <label for="">landline phone number:</label>
+                  <input
+                    type="text"
+                    placeholder="Type something..."
+                    class="input__el"
+                    name="landlinePhoneNumber"
+                  />
+                  <span class="active__input_line"></span>
+                </div>
+              </div>
+              <div class="row__container">
+                <div class="input__group">
+                  <label for=""
+                    >email address: <span class="star">*</span></label
+                  >
+                  <input
+                    type="email"
+                    placeholder="Type something..."
+                    class="input__el"
+                    name="email"
+                  />
+                  <span class="active__input_line"></span>
+                </div>
+                <div class="input__group">
+                  <label for="">website:</label>
+                  <input
+                    type="text"
+                    placeholder="Type something..."
+                    class="input__el"
+                    name="website"
+                  />
+                  <span class="active__input_line"></span>
+                </div>
+              </div>
+              <div class="row__container">
+                <div class="input__group">
+                  <label for="">country: <span class="star">*</span></label>
+                  <select
+                    name="country"
+                    id=""
+                    onchange="selectBoxHandler(this)"
+                  >
+                    <option value="" selected disabled>
+                      select your country
+                    </option>
+                    <option value="france">france</option>
+                  </select>
+                </div>
+                <div class="input__group">
+                  <label for="">city: <span class="star">*</span></label>
+                  <select name="city" id="" onchange="selectBoxHandler(this)">
+                    <option value="" selected disabled>select your city</option>
+                    <option value="paris">paris</option>
+                  </select>
+                </div>
+              </div>
+              <div class="page__buttons">
+                <button type="button" onclick="goToPage(1)">
+                  <img
+                    class="lazyload"
+                    data-src="./assets/images/icons/pre-arrow.png"
+                    alt="arrow"
+                  />
+                </button>
+                <button
+                  type="button"
+                  class="next_page disable"
+                  onclick="goToPage(3)"
+                >
+                  <svg
+                    xmlns="http://www.w3.org/2000/svg"
+                    width="52"
+                    height="20"
+                    viewBox="0 0 52 20"
+                    fill="none"
+                  >
+                    <path
+                      d="M51.7439 10.4969L43.174 18.9344C43.0387 19.0586 42.8596 19.1262 42.6746 19.123C42.4896 19.1197 42.313 19.0459 42.1822 18.9171C42.0513 18.7883 41.9764 18.6145 41.9731 18.4323C41.9699 18.2502 42.0385 18.0739 42.1647 17.9406L49.5145 10.7031H1.21905C1.02964 10.7031 0.847993 10.629 0.714064 10.4972C0.580134 10.3653 0.504893 10.1865 0.504893 9.99998C0.504893 9.8135 0.580134 9.63466 0.714064 9.50279C0.847993 9.37093 1.02964 9.29685 1.21905 9.29685H49.5145L42.1647 2.05935C42.0385 1.92606 41.9699 1.74977 41.9731 1.56761C41.9764 1.38546 42.0513 1.21166 42.1822 1.08283C42.313 0.954008 42.4896 0.880216 42.6746 0.877002C42.8596 0.873788 43.0387 0.941403 43.174 1.0656L51.7439 9.5031C51.8776 9.63494 51.9527 9.81365 51.9527 9.99998C51.9527 10.1863 51.8776 10.365 51.7439 10.4969Z"
+                      fill="#212F45"
+                    />
+                  </svg>
+                </button>
+              </div>
+            </div>
+
+            <div class="page__3 page__form">
+              <h2 class="page__3_title">
+                create your account to track your request!
+              </h2>
+              <div class="row__container">
+                <div class="input__group">
+                  <label for="">username:</label>
+                  <input
+                    type="text"
+                    placeholder="Type something..."
+                    class="input__el"
+                    name="username"
+                  />
+                  <span class="active__input_line"></span>
+                </div>
+              </div>
+              <div class="row__container">
+                <div class="input__group">
+                  <label for="">email address:</label>
+                  <input
+                    type="email"
+                    placeholder="Type something..."
+                    class="input__el"
+                    name="email"
+                  />
+                  <span class="active__input_line"></span>
+                </div>
+              </div>
+              <div class="row__container">
+                <div class="input__group">
+                  <label for="">choose a password:</label>
+                  <input
+                    type="password"
+                    placeholder="Type something..."
+                    class="input__el"
+                    name="password"
+                  />
+                  <span class="active__input_line"></span>
+                </div>
+              </div>
+              <button type="button" class="enable btn__create_account">
+                create account
+              </button>
+              <span>or</span>
+              <div class="social__accounts">
+                <button type="button">
+                  <img src="./assets/images/icons/google.png" alt="google" />
+                  sign up with google
+                </button>
+                <button type="button">
+                  <img src="./assets/images/icons/facebook.png" alt="google" />
+                  sign up with facebook
+                </button>
+                <button type="button">
+                  <img src="./assets/images/icons/apple.png" alt="google" />
+                  sign up with apple id
+                </button>
+              </div>
+              <button type="button" class="" onclick="goToPage(2)">
+                <img
+                  class="lazyload"
+                  data-src="./assets/images/icons/pre-arrow.png"
+                  alt="arrow"
+                />
+              </button>
+            </div>
+          </div>
+        </form>
+      </div>
+
+      <!-- request success -->
+      <div class="request__success">
+        <button class="close__form close__success_form">
+          <svg
+            width="38"
+            height="39"
+            viewBox="0 0 38 39"
+            fill="none"
+            xmlns="http://www.w3.org/2000/svg"
+          >
+            <path
+              d="M35.75 2L1.67105 37"
+              stroke="#D78D1F"
+              stroke-width="3"
+              stroke-linecap="round"
+            />
+            <path
+              d="M1.66699 2.27411L35.7459 36.3531"
+              stroke="#D78D1F"
+              stroke-width="3"
+              stroke-linecap="round"
+            />
+          </svg>
+        </button>
+        <img
+          src="./assets/images/bg-form-success.png"
+          alt="pattern"
+          class="img__desktop"
+        />
+        <img
+          src="./assets/images/bg-request-mobile.png"
+          alt="pattern"
+          class="img__mobile"
+        />
+        <div class="layer"></div>
+        <div class="content">
+          <h4>Your account is created.</h4>
+          <p>Thank you for choosing us!</p>
+          <span
+            >We will come back to you soon with the right solutions for your
+            brand, but until then you can personalize your account.</span
+          >
+          <a href="#">Go to your dashboard</a>
+        </div>
+      </div>
+    </div>
+    <!-- ==== Request Form End ==== -->
+
+    <!-- ==== Contact-us Start ==== -->
+    <div class="contact__container">
+      <div class="contact__top">
+        <a href="./index.html" class="logo">
+          <img src="./assets/images/Logo.png" alt="logo" />
+        </a>
+        <button class="close__form close__contact_form">
+          <svg
+            width="38"
+            height="39"
+            viewBox="0 0 38 39"
+            fill="none"
+            xmlns="http://www.w3.org/2000/svg"
+          >
+            <path
+              d="M35.75 2L1.67105 37"
+              stroke="#D78D1F"
+              stroke-width="3"
+              stroke-linecap="round"
+            />
+            <path
+              d="M1.66699 2.27411L35.7459 36.3531"
+              stroke="#D78D1F"
+              stroke-width="3"
+              stroke-linecap="round"
+            />
+          </svg>
+        </button>
+      </div>
+      <div class="contact__items">
+        <div class="contact__left">
+          <h4 class="title">Contact us</h4>
+          <div class="desc">
+            <p>You can contact us at any time</p>
+            <p>
+              Fill up the form and our team will get back to you within 24
+              hours.
+            </p>
+          </div>
+          <div class="contact__info">
+            <!-- <div class="info__item">
+              <svg
+                width="26"
+                height="26"
+                viewBox="0 0 26 26"
+                fill="none"
+                xmlns="http://www.w3.org/2000/svg"
+                class="stroke"
+              >
+                <path
+                  d="M10.2213 3.53097L11.1407 5.17855C11.9695 6.66605 11.6366 8.61539 10.3304 9.92297C10.3304 9.92297 8.74374 11.5082 11.6196 14.3826C14.4912 17.2542 16.0778 15.6718 16.0778 15.6718C17.3854 14.3642 19.3362 14.0313 20.8222 14.8601L22.4698 15.7809C24.7152 17.0332 24.9802 20.1811 23.0067 22.1559C21.821 23.3402 20.3675 24.2639 18.7624 24.3234C16.0594 24.4268 11.468 23.7426 6.8624 19.1384C2.25824 14.5328 1.57399 9.94139 1.6774 7.23839C1.73832 5.6333 2.66057 4.1798 3.8449 2.99405C5.81974 1.02064 8.96757 1.28555 10.2199 3.53239L10.2213 3.53097Z"
+                  stroke="white"
+                  stroke-width="2"
+                  stroke-linecap="round"
+                />
+              </svg>
+              <span>+1 234 56 780</span>
+            </div> -->
+            <div class="info__item">
+              <svg
+                width="28"
+                height="22"
+                viewBox="0 0 28 22"
+                fill="none"
+                xmlns="http://www.w3.org/2000/svg"
+                class="fill"
+              >
+                <path
+                  fill-rule="evenodd"
+                  clip-rule="evenodd"
+                  d="M0.972314 5.8334C0.575648 9.52099 0.592648 13.7738 1.14515 17.4458C1.29345 18.433 1.76972 19.3416 2.49724 20.0252C3.22477 20.7088 4.16121 21.1276 5.15573 21.2142L7.2949 21.3997C11.7574 21.7879 16.2426 21.7879 20.7051 21.3997L22.8442 21.2156C23.8388 21.129 24.7752 20.7102 25.5027 20.0266C26.2302 19.343 26.7065 18.4345 26.8548 17.4472C27.4073 13.7738 27.4243 9.52099 27.0276 5.8334C26.9765 5.40567 26.9188 4.97874 26.8548 4.55274C26.7065 3.56553 26.2302 2.65697 25.5027 1.97339C24.7752 1.2898 23.8388 0.870993 22.8442 0.784405L20.7051 0.600238C16.2434 0.212356 11.7565 0.212356 7.2949 0.600238L5.15573 0.784405C4.16121 0.870993 3.22477 1.2898 2.49724 1.97339C1.76972 2.65697 1.29345 3.56553 1.14515 4.55274C1.08128 4.97876 1.02366 5.40569 0.972314 5.8334ZM7.47906 2.71674C11.8177 2.33958 16.1809 2.33958 20.5195 2.71674L22.6586 2.90232C23.178 2.94766 23.6671 3.16638 24.0471 3.52329C24.4271 3.8802 24.6761 4.35456 24.7539 4.87007L24.8021 5.20016L16.924 9.57766C16.0295 10.0746 15.0232 10.3353 14 10.3353C12.9768 10.3353 11.9704 10.0746 11.076 9.57766L3.1979 5.20016L3.24606 4.87007C3.32334 4.35457 3.57194 3.88011 3.95178 3.52313C4.33163 3.16616 4.8206 2.94748 5.3399 2.90232L7.47906 2.71674ZM25.0613 7.48666C25.3366 10.702 25.2335 13.9386 24.7539 17.1299C24.6766 17.6454 24.428 18.1199 24.0482 18.4768C23.6683 18.8338 23.1794 19.0525 22.6601 19.0977L20.5209 19.2832C16.1818 19.6604 11.8182 19.6604 7.47906 19.2832L5.3399 19.0977C4.8206 19.0525 4.33163 18.8338 3.95178 18.4768C3.57194 18.1199 3.32334 17.6454 3.24606 17.1299C2.76603 13.9387 2.66238 10.7021 2.93723 7.48666L10.0432 11.4349C11.2534 12.1072 12.6149 12.46 13.9993 12.46C15.3836 12.46 16.7452 12.1072 17.9553 11.4349L25.0613 7.48666Z"
+                  fill="white"
+                />
+              </svg>
+              <span>info@futurewavesco.com</span>
+            </div>
+            <!-- <div class="info__item">
+              <svg
+                width="24"
+                height="28"
+                viewBox="0 0 24 28"
+                fill="none"
+                xmlns="http://www.w3.org/2000/svg"
+                class="fill"
+              >
+                <path
+                  d="M17.1003 12.3C17.1003 13.6526 16.563 14.9498 15.6066 15.9063C14.6502 16.8627 13.353 17.4 12.0003 17.4C10.6477 17.4 9.35054 16.8627 8.3941 15.9063C7.43767 14.9498 6.90035 13.6526 6.90035 12.3C6.90035 10.9474 7.43767 9.6502 8.3941 8.69377C9.35054 7.73733 10.6477 7.20001 12.0003 7.20001C13.353 7.20001 14.6502 7.73733 15.6066 8.69377C16.563 9.6502 17.1003 10.9474 17.1003 12.3ZM15.4003 12.3C15.4003 11.3983 15.0421 10.5335 14.4045 9.89585C13.7669 9.25823 12.9021 8.90001 12.0003 8.90001C11.0986 8.90001 10.2338 9.25823 9.59619 9.89585C8.95856 10.5335 8.60035 11.3983 8.60035 12.3C8.60035 13.2017 8.95856 14.0666 9.59619 14.7042C10.2338 15.3418 11.0986 15.7 12.0003 15.7C12.9021 15.7 13.7669 15.3418 14.4045 14.7042C15.0421 14.0666 15.4003 13.2017 15.4003 12.3ZM20.4153 20.7235C22.6473 18.4904 23.9011 15.4624 23.9011 12.3051C23.9011 9.14785 22.6473 6.11981 20.4153 3.88671C19.3105 2.78116 17.9987 1.90415 16.5548 1.30579C15.1109 0.707425 13.5633 0.399445 12.0003 0.399445C10.4374 0.399445 8.88975 0.707425 7.44587 1.30579C6.00198 1.90415 4.69015 2.78116 3.58535 3.88671C1.35341 6.11981 0.0996094 9.14785 0.0996094 12.3051C0.0996094 15.4624 1.35341 18.4904 3.58535 20.7235L6.17105 23.2718L9.64415 26.6463L9.87025 26.8469C11.1877 27.9145 13.1172 27.8465 14.3582 26.6463L18.4977 22.6173L20.4153 20.7235ZM4.78385 5.08521C5.73138 4.13726 6.8564 3.38527 8.09463 2.87222C9.33286 2.35917 10.66 2.0951 12.0003 2.0951C13.3407 2.0951 14.6678 2.35917 15.9061 2.87222C17.1443 3.38527 18.2693 4.13726 19.2168 5.08521C21.0779 6.94748 22.1479 9.45645 22.2036 12.0886C22.2594 14.7208 21.2965 17.2728 19.516 19.2122L19.2168 19.525L16.9711 21.7418L13.1801 25.4274L13.0203 25.5634C12.7264 25.7849 12.3684 25.9047 12.0003 25.9047C11.6323 25.9047 11.2743 25.7849 10.9803 25.5634L10.8222 25.4274L5.75625 20.4889L4.78385 19.525L4.48465 19.2139C2.70415 17.2745 1.74132 14.7225 1.79707 12.0903C1.85282 9.45815 2.92283 6.94748 4.78385 5.08521Z"
+                  fill="white"
+                />
+              </svg>
+              <span
+                >Lorem ipsum dolor sit amet, consectetuer adipiscing elit.</span
+              >
+            </div> -->
+          </div>
+          <div class="contact__social">
+            <a
+              href="https://www.linkedin.com/company/futurewavesco/"
+              target="_blank"
+              class="social"
+            >
+              <svg
+                width="38"
+                height="38"
+                viewBox="0 0 38 38"
+                fill="none"
+                xmlns="http://www.w3.org/2000/svg"
+                class="stroke linkedin"
+              >
+                <path
+                  d="M6.33268 9.50001C8.08158 9.50001 9.49935 8.08224 9.49935 6.33334C9.49935 4.58444 8.08158 3.16667 6.33268 3.16667C4.58378 3.16667 3.16602 4.58444 3.16602 6.33334C3.16602 8.08224 4.58378 9.50001 6.33268 9.50001Z"
+                  fill="white"
+                />
+                <path
+                  d="M6.33398 15.8333V31.6667"
+                  stroke="white"
+                  stroke-width="4"
+                  stroke-linecap="round"
+                />
+                <path
+                  d="M15.834 15.8333V31.6667"
+                  stroke="white"
+                  stroke-width="4"
+                  stroke-linecap="round"
+                />
+                <path
+                  d="M15.834 23.75C15.834 19.3778 19.3784 15.8333 23.7507 15.8333C28.1229 15.8333 31.6673 19.3778 31.6673 23.75V31.6667"
+                  stroke="white"
+                  stroke-width="4"
+                  stroke-linecap="round"
+                />
+              </svg>
+            </a>
+            <a href="https://twitter.com/futurewavesco?s=11" class="social">
+              <svg
+                width="31"
+                height="28"
+                viewBox="0 0 31 28"
+                fill="none"
+                xmlns="http://www.w3.org/2000/svg"
+                class="fill"
+              >
+                <path
+                  d="M3.10557 1.89119C3.39223 1.85787 3.68256 1.90354 3.94515 2.02326C4.20774 2.14297 4.43262 2.33218 4.59548 2.57044C6.93248 5.98885 9.73815 7.41069 12.8526 7.73369C13.0046 6.4021 13.364 5.08635 14.0401 3.92735C15.0312 2.22685 16.6431 0.97602 18.9452 0.513687C22.1277 -0.12598 24.5502 1.02669 25.9546 2.43744L28.792 1.90702C29.0889 1.85139 29.3955 1.88185 29.6757 1.99481C29.9558 2.10778 30.1978 2.29852 30.3731 2.54455C30.5484 2.79057 30.6496 3.0816 30.6649 3.38329C30.6802 3.68498 30.6088 3.98473 30.4592 4.24719L27.7359 9.03202C27.9845 15.9369 26.0655 20.7566 21.9741 24.0769C19.805 25.8375 16.6985 26.8366 13.2896 27.1454C9.85373 27.4557 5.96982 27.0804 2.10965 25.9531C1.77983 25.8569 1.49025 25.656 1.28462 25.3808C1.07898 25.1056 0.968449 24.7709 0.9697 24.4273C0.970951 24.0838 1.08392 23.75 1.29155 23.4762C1.49919 23.2025 1.79022 23.0037 2.12073 22.9099C4.0619 22.3574 5.54073 21.8808 6.87548 21.0464C4.97707 20.0394 3.57898 18.722 2.5894 17.221C1.21507 15.1342 0.705234 12.8067 0.603901 10.7088C0.502567 8.61085 0.804984 6.66652 1.12482 5.26527C1.3069 4.46569 1.51907 3.66452 1.81198 2.89819C1.91531 2.62805 2.09065 2.39138 2.31897 2.21386C2.5473 2.03633 2.8183 1.92474 3.10557 1.89119Z"
+                  fill="white"
+                />
+              </svg>
+            </a>
+            <a
+              href="https://wa.me/message/FZVH5RLLWEGYJ1"
+              target="_blank"
+              class="social"
+            >
+              <svg
+                width="31"
+                height="32"
+                viewBox="0 0 31 32"
+                fill="none"
+                xmlns="http://www.w3.org/2000/svg"
+                class="stroke"
+              >
+                <path
+                  d="M1.41602 30.25L4.02852 24.2333C2.02981 21.3961 1.13524 17.927 1.51267 14.477C1.8901 11.027 3.51359 7.83338 6.07847 5.4954C8.64335 3.15742 11.9733 1.83583 15.4434 1.77865C18.9135 1.72147 22.2851 2.93263 24.9256 5.18484C27.5662 7.43704 29.294 10.5755 29.7849 14.0111C30.2758 17.4468 29.496 20.9435 27.5918 23.8451C25.6877 26.7466 22.7901 28.8535 19.4429 29.7704C16.0956 30.6873 12.5288 30.3511 9.41185 28.825L1.41602 30.25Z"
+                  stroke="white"
+                  stroke-width="2"
+                  stroke-linecap="round"
+                  stroke-linejoin="round"
+                />
+                <path
+                  d="M10.916 12.8333C10.916 13.0433 10.9994 13.2447 11.1479 13.3931C11.2964 13.5416 11.4977 13.625 11.7077 13.625C11.9176 13.625 12.119 13.5416 12.2675 13.3931C12.4159 13.2447 12.4993 13.0433 12.4993 12.8333V11.25C12.4993 11.04 12.4159 10.8387 12.2675 10.6902C12.119 10.5417 11.9176 10.4583 11.7077 10.4583C11.4977 10.4583 11.2964 10.5417 11.1479 10.6902C10.9994 10.8387 10.916 11.04 10.916 11.25V12.8333ZM10.916 12.8333C10.916 14.933 11.7501 16.9466 13.2348 18.4313C14.7194 19.9159 16.7331 20.75 18.8327 20.75M18.8327 20.75H20.416C20.626 20.75 20.8273 20.6666 20.9758 20.5181C21.1243 20.3697 21.2077 20.1683 21.2077 19.9583C21.2077 19.7484 21.1243 19.547 20.9758 19.3985C20.8273 19.2501 20.626 19.1667 20.416 19.1667H18.8327C18.6227 19.1667 18.4214 19.2501 18.2729 19.3985C18.1244 19.547 18.041 19.7484 18.041 19.9583C18.041 20.1683 18.1244 20.3697 18.2729 20.5181C18.4214 20.6666 18.6227 20.75 18.8327 20.75Z"
+                  stroke="white"
+                  stroke-width="2"
+                  stroke-linecap="round"
+                  stroke-linejoin="round"
+                />
+              </svg>
+            </a>
+            <a
+              href="https://instagram.com/futurewavesco"
+              target="_blank"
+              class="social"
+            >
+              <svg
+                width="33"
+                height="32"
+                viewBox="0 0 33 32"
+                fill="none"
+                xmlns="http://www.w3.org/2000/svg"
+                class="fill"
+              >
+                <path
+                  d="M22.8596 0.166672H10.0821C7.58542 0.169606 5.19187 1.16281 3.4266 2.92838C1.66134 4.69394 0.66853 7.08766 0.666016 9.58434L0.666016 22.3618C0.66895 24.8585 1.66216 27.2521 3.42772 29.0173C5.19329 30.7826 7.58701 31.7754 10.0837 31.7779H22.8612C25.3579 31.775 27.7514 30.7818 29.5167 29.0162C31.2819 27.2507 32.2748 24.8569 32.2773 22.3603V9.58276C32.2743 7.08608 31.2811 4.69253 29.5156 2.92726C27.75 1.16199 25.3563 0.169186 22.8596 0.166672ZM29.0979 22.3603C29.0979 23.1795 28.9366 23.9907 28.6231 24.7476C28.3096 25.5044 27.8501 26.1921 27.2708 26.7714C26.6915 27.3507 26.0038 27.8102 25.2469 28.1237C24.49 28.4372 23.6788 28.5986 22.8596 28.5986H10.0821C8.42786 28.5982 6.84153 27.9407 5.67195 26.7709C4.50238 25.601 3.84535 24.0145 3.84535 22.3603V9.58276C3.84577 7.92852 4.50321 6.34218 5.67307 5.17261C6.84294 4.00304 8.42945 3.346 10.0837 3.346H22.8612C24.5154 3.34642 26.1018 4.00386 27.2713 5.17373C28.4409 6.3436 29.0979 7.9301 29.0979 9.58434V22.3603Z"
+                  fill="white"
+                />
+                <path
+                  d="M16.472 7.79651C14.3051 7.79986 12.2279 8.66225 10.6958 10.1946C9.16375 11.727 8.30176 13.8044 8.29883 15.9713C8.30134 18.1387 9.16336 20.2167 10.6958 21.7495C12.2283 23.2822 14.3061 24.1447 16.4736 24.1476C18.6413 24.1451 20.7195 23.2828 22.2523 21.75C23.7852 20.2172 24.6474 18.139 24.6499 15.9713C24.6466 13.8038 23.7837 11.7262 22.2507 10.194C20.7176 8.66181 18.6394 7.80019 16.472 7.79809V7.79651ZM16.472 20.9683C15.1471 20.9683 13.8765 20.442 12.9397 19.5051C12.0029 18.5683 11.4766 17.2977 11.4766 15.9728C11.4766 14.648 12.0029 13.3774 12.9397 12.4405C13.8765 11.5037 15.1471 10.9774 16.472 10.9774C17.7969 10.9774 19.0675 11.5037 20.0043 12.4405C20.9411 13.3774 21.4674 14.648 21.4674 15.9728C21.4674 17.2977 20.9411 18.5683 20.0043 19.5051C19.0675 20.442 17.7969 20.9683 16.472 20.9683Z"
+                  fill="white"
+                />
+                <path
+                  d="M24.6676 9.81724C25.7493 9.81724 26.6262 8.94035 26.6262 7.85865C26.6262 6.77696 25.7493 5.90007 24.6676 5.90007C23.5859 5.90007 22.709 6.77696 22.709 7.85865C22.709 8.94035 23.5859 9.81724 24.6676 9.81724Z"
+                  fill="white"
+                />
+              </svg>
+            </a>
+            <a href="https://t.me/futurewavesco" target="_blank" class="social">
+              <svg
+                width="31"
+                height="28"
+                viewBox="0 0 31 28"
+                fill="none"
+                xmlns="http://www.w3.org/2000/svg"
+                class="stroke"
+              >
+                <path
+                  d="M20.084 10.8333L13.7507 17.1667L23.2507 26.6667L29.584 1.33333L1.08398 12.4167L7.41732 15.5833L10.584 25.0833L15.334 18.75"
+                  stroke="white"
+                  stroke-width="2"
+                  stroke-linecap="round"
+                  stroke-linejoin="round"
+                />
+              </svg>
+            </a>
+            <a
+              href="https://youtube.com/@FutureWavesCo"
+              target="_blank"
+              class="social"
+            >
+              <svg
+                width="34"
+                height="28"
+                viewBox="0 0 34 28"
+                fill="none"
+                xmlns="http://www.w3.org/2000/svg"
+                class="fill"
+              >
+                <path
+                  d="M22.5751 13.0114L15.4501 8.26141C15.2712 8.14206 15.0633 8.07353 14.8485 8.06313C14.6337 8.05272 14.4201 8.10083 14.2305 8.20233C14.041 8.30382 13.8825 8.45489 13.7721 8.63941C13.6616 8.82393 13.6034 9.03497 13.6035 9.25001V18.75C13.6034 18.965 13.6616 19.1761 13.7721 19.3606C13.8825 19.5451 14.041 19.6962 14.2305 19.7977C14.4201 19.8992 14.6337 19.9473 14.8485 19.9369C15.0633 19.9265 15.2712 19.8579 15.4501 19.7386L22.5751 14.9886C22.738 14.8802 22.8715 14.7332 22.9639 14.5608C23.0563 14.3883 23.1047 14.1957 23.1047 14C23.1047 13.8043 23.0563 13.6117 22.9639 13.4392C22.8715 13.2668 22.738 13.1198 22.5751 13.0114ZM15.9785 16.5309V11.4766L19.7755 14L15.9785 16.5309ZM32.9494 5.31938C32.8095 4.77216 32.5415 4.26604 32.1676 3.84277C31.7936 3.4195 31.3243 3.09122 30.7985 2.88501C25.7101 0.919693 17.6113 0.937506 17.166 0.937506C16.7207 0.937506 8.62195 0.919693 3.53352 2.88501C3.0077 3.09122 2.53844 3.4195 2.16447 3.84277C1.7905 4.26604 1.52252 4.77216 1.38266 5.31938C0.998203 6.80079 0.541016 9.50829 0.541016 14C0.541016 18.4917 0.998203 21.1992 1.38266 22.6806C1.52231 23.2281 1.79019 23.7345 2.16418 24.1581C2.53816 24.5816 3.00752 24.9101 3.53352 25.1165C8.4082 26.9972 16.0379 27.0625 17.068 27.0625H17.264C18.2941 27.0625 25.9283 26.9972 30.7985 25.1165C31.3245 24.9101 31.7939 24.5816 32.1679 24.1581C32.5418 23.7345 32.8097 23.2281 32.9494 22.6806C33.3338 21.1963 33.791 18.4917 33.791 14C33.791 9.50829 33.3338 6.80079 32.9494 5.31938ZM30.6501 22.0928C30.6048 22.2749 30.5171 22.4437 30.394 22.5854C30.2709 22.727 30.116 22.8375 29.942 22.9077C25.244 24.7216 17.2536 24.689 17.1764 24.689H17.166C17.0859 24.689 9.10141 24.7187 4.40039 22.9077C4.22638 22.8375 4.07149 22.727 3.94841 22.5854C3.82534 22.4437 3.73758 22.2749 3.69234 22.0928C3.33164 20.7376 2.91602 18.2409 2.91602 14C2.91602 9.75915 3.33164 7.26243 3.68195 5.91461C3.72635 5.73141 3.81372 5.56142 3.93684 5.41868C4.05997 5.27594 4.2153 5.16456 4.39 5.09376C8.92031 3.34368 16.5114 3.31251 17.1334 3.31251H17.1734C17.2536 3.31251 25.2455 3.28579 29.9391 5.09376C30.1131 5.16399 30.268 5.27445 30.391 5.41611C30.5141 5.55776 30.6019 5.72656 30.6471 5.90868C31.0004 7.26243 31.416 9.75915 31.416 14C31.416 18.2409 31.0004 20.7376 30.6501 22.0854V22.0928Z"
+                  fill="white"
+                />
+              </svg>
+            </a>
+          </div>
+        </div>
+        <div class="contact__right">
+          <h4 class="title">Tell us about your projects.</h4>
+          <h4 class="title__mobile">contact us</h4>
+          <form class="form">
+            <div class="input__group">
+              <input type="text" placeholder="name" />
+              <span class="input__active_line"></span>
+            </div>
+            <div class="input__group">
+              <input type="email" placeholder="email" />
+              <span class="input__active_line"></span>
+            </div>
+            <div class="input__group">
+              <input type="text" placeholder="phone number (optional)" />
+              <span class="input__active_line"></span>
+            </div>
+            <div class="input__group">
+              <input type="text" placeholder="title" />
+              <span class="input__active_line"></span>
+            </div>
+            <p>how can we help?</p>
+            <div class="input__group">
+              <input type="text" placeholder="your message" />
+              <span class="input__active_line"></span>
+            </div>
+            <button type="button" class="submit__contact">
+              <svg
+                width="74"
+                height="40"
+                viewBox="0 0 74 40"
+                fill="none"
+                xmlns="http://www.w3.org/2000/svg"
+              >
+                <g opacity="1">
+                  <path
+                    d="M68.2461 20.8107L57.0987 31.786C56.9226 31.9476 56.6897 32.0355 56.449 32.0313C56.2083 32.0271 55.9787 31.9312 55.8085 31.7636C55.6383 31.596 55.5408 31.3699 55.5366 31.133C55.5323 30.8961 55.6217 30.6667 55.7858 30.4934L65.3462 21.079H2.52467C2.2783 21.079 2.04201 20.9826 1.8678 20.8111C1.69359 20.6396 1.59572 20.407 1.59572 20.1644C1.59572 19.9218 1.69359 19.6892 1.8678 19.5177C2.04201 19.3461 2.2783 19.2498 2.52467 19.2498H65.3462L55.7858 9.83542C55.6217 9.66204 55.5323 9.43272 55.5366 9.19578C55.5408 8.95883 55.6383 8.73276 55.8085 8.56518C55.9787 8.39761 56.2083 8.30163 56.449 8.29744C56.6897 8.29326 56.9226 8.38122 57.0987 8.54277L68.2461 19.5181C68.4201 19.6896 68.5178 19.922 68.5178 20.1644C68.5178 20.4068 68.4201 20.6392 68.2461 20.8107Z"
+                    fill="#F0C85B"
+                  />
+                </g>
+              </svg>
+            </button>
+          </form>
+
+          <!-- form success -->
+          <div class="form__success contact__success">
+            <h4>Your message sent!</h4>
+            <p>We will come back to you soon.</p>
+            <button class="close__contact_success">
+              back
+              <svg
+                width="19"
+                height="19"
+                viewBox="0 0 19 19"
+                fill="none"
+                xmlns="http://www.w3.org/2000/svg"
+              >
+                <path
+                  d="M15.7787 6.54561C14.5354 5.57782 13.0074 5.04981 11.4337 5.04248V5.01716H11.3337H3.27176L6.65065 1.68082L6.6511 1.68037C6.791 1.54047 6.8696 1.35071 6.8696 1.15286C6.8696 0.955 6.791 0.765246 6.6511 0.62534C6.51119 0.485434 6.32144 0.406836 6.12358 0.406836C5.92583 0.406836 5.73617 0.485353 5.59628 0.625124C5.59621 0.625196 5.59614 0.625268 5.59606 0.62534L0.485355 5.67855L0.413253 5.74984L0.485535 5.82095L5.59631 10.8487C5.59636 10.8487 5.5964 10.8488 5.59644 10.8488C5.73555 10.9869 5.9238 11.064 6.1198 11.0633C6.31586 11.0627 6.50362 10.9841 6.64176 10.845C6.77991 10.7059 6.85713 10.5176 6.85644 10.3215C6.85574 10.1254 6.77719 9.93768 6.63807 9.79953L6.63761 9.79908L3.26666 6.49494L11.3273 6.49494L11.3279 6.49494C12.8367 6.48657 14.2873 7.07665 15.3618 8.13587C16.4361 9.19489 17.0469 10.6365 17.0604 12.145C17.053 13.1903 16.7558 14.2131 16.2017 15.0996C15.6475 15.9863 14.8582 16.7018 13.9215 17.1665L13.9208 17.1668C13.7396 17.2584 13.6021 17.4183 13.5387 17.6112C13.5074 17.7067 13.4951 17.8075 13.5027 17.9078C13.5102 18.0081 13.5374 18.1059 13.5828 18.1956C13.6282 18.2853 13.6907 18.3653 13.767 18.4308C13.8432 18.4964 13.9317 18.5463 14.0272 18.5777C14.2201 18.6411 14.4303 18.6252 14.6116 18.5336C16.0482 17.8087 17.1973 16.6189 17.8718 15.1579C18.5463 13.6969 18.7066 12.0506 18.3266 10.4869C17.9466 8.92318 17.0486 7.53409 15.7787 6.54561Z"
+                  fill="#212F45"
+                  stroke="#212F45"
+                  stroke-width="0.2"
+                />
+              </svg>
+            </button>
+          </div>
+        </div>
+      </div>
+    </div>
+    <!-- ==== Contact-us End ==== -->
+
+    <!-- ==== CTA - mobile Start  ==== -->
+    <div class="cta__mobile" onclick="openRequestFormHandler()">
+      <p>Start now!</p>
+      <div class="circle">
+        <svg
+          width="34"
+          height="34"
+          viewBox="0 0 34 34"
+          fill="none"
+          xmlns="http://www.w3.org/2000/svg"
+        >
+          <path
+            d="M17 2.3335V31.6668"
+            stroke="#F0C85B"
+            stroke-width="3"
+            stroke-linecap="round"
+          />
+          <path
+            opacity="0.5"
+            d="M24.3332 7.8335V26.1668M9.6665 7.8335V26.1668"
+            stroke="#F0C85B"
+            stroke-width="3"
+            stroke-linecap="round"
+          />
+          <path
+            d="M31.6666 15.167V18.8337M2.33325 15.167V18.8337"
+            stroke="#F0C85B"
+            stroke-width="3"
+            stroke-linecap="round"
+          />
+        </svg>
+      </div>
+    </div>
+    <!-- ==== CTA - mobile End  ==== -->
+
+    <!-- ==== Main Start ==== -->
+    <main class="main">
+      <div class="container">
+        <!-- ---- Contact Info Start ---- -->
+        <div class="contact__info_fixed" data-aos="fade-up">
+          <div
+            class="contact__info_wrapper"
+            data-aos="fade-up"
+            data-aos-duration="750"
+          >
+            <span class="contact__info_link btn__start_project">
+              <svg
+                id="flag__icon"
+                width="17"
+                height="17"
+                viewBox="0 0 17 17"
+                fill="none"
+                xmlns="http://www.w3.org/2000/svg"
+              >
+                <g id="flag-alt (1) 1" clip-path="url(#clip0_23_141)">
+                  <path
+                    id="vector"
+                    d="M17 16.2917C17 16.6827 16.6834 17 16.2917 17L2.83338 17C1.2708 17 4.94773e-05 15.7293 4.94959e-05 14.1667L4.96479e-05 1.41808C-0.0389087 0.284751 1.38697 -0.426417 2.26884 0.286167L5.31255 2.57904L8.35626 0.286167C9.23813 -0.427125 10.664 0.284043 10.625 1.41808L10.625 15.5833L16.2917 15.5833C16.6834 15.5833 17 15.9007 17 16.2917Z"
+                    fill="#144552"
+                  />
+                </g>
+                <defs>
+                  <clipPath id="clip0_23_141">
+                    <rect
+                      width="17"
+                      height="17"
+                      fill="white"
+                      transform="translate(0 17) rotate(-90)"
+                    />
+                  </clipPath>
+                </defs>
+              </svg>
+              <span>start a project</span>
+            </span>
+          </div>
+          <div
+            class="contact__info_wrapper"
+            data-aos="fade-up"
+            data-aos-duration="850"
+          >
+            <span class="contact__info_link btn__get_contact">
+              <svg
+                width="24"
+                height="24"
+                viewBox="0 0 24 24"
+                fill="none"
+                xmlns="http://www.w3.org/2000/svg"
+              >
+                <g clip-path="url(#clip0_23_206)">
+                  <path
+                    id="vector"
+                    fill-rule="evenodd"
+                    clip-rule="evenodd"
+                    d="M3 10.5C3 8.24566 3.89553 6.08365 5.48959 4.48959C7.08365 2.89553 9.24566 2 11.5 2C13.7543 2 15.9163 2.89553 17.5104 4.48959C19.1045 6.08365 20 8.24566 20 10.5L20 11L20.99 11C21.1227 11 21.2541 11.0262 21.3767 11.077C21.4993 11.1278 21.6107 11.2023 21.7045 11.2962C21.7983 11.3901 21.8727 11.5015 21.9234 11.6242C21.9741 11.7468 22.0001 11.8783 22 12.011C21.998 14.471 21.177 16.963 19.496 18.854C17.798 20.762 15.275 21.998 12.009 22L11.5 22C9.24566 22 7.08365 21.1045 5.48959 19.5104C3.89553 17.9163 3 15.7543 3 13.5L3 10.5ZM10 15.5C10 15.8978 10.158 16.2794 10.4393 16.5607C10.7206 16.842 11.1022 17 11.5 17C11.8978 17 12.2794 16.842 12.5607 16.5607C12.842 16.2794 13 15.8978 13 15.5C13 15.1022 12.842 14.7206 12.5607 14.4393C12.2794 14.158 11.8978 14 11.5 14C11.1022 14 10.7206 14.158 10.4393 14.4393C10.158 14.7206 10 15.1022 10 15.5ZM10 8.5C10 8.89782 10.158 9.27936 10.4393 9.56066C10.7206 9.84196 11.1022 10 11.5 10C11.8978 10 12.2794 9.84196 12.5607 9.56066C12.842 9.27936 13 8.89782 13 8.5C13 8.10218 12.842 7.72064 12.5607 7.43934C12.2794 7.15804 11.8978 7 11.5 7C11.1022 7 10.7206 7.15804 10.4393 7.43934C10.158 7.72064 10 8.10218 10 8.5Z"
+                    fill="#144552"
+                  />
+                </g>
+                <defs>
+                  <clipPath id="clip0_23_206">
+                    <rect
+                      width="24"
+                      height="24"
+                      fill="white"
+                      transform="translate(0 24) rotate(-90)"
+                    />
+                  </clipPath>
+                </defs>
+              </svg>
+              <span>get in touch</span>
+            </span>
+          </div>
+          <div
+            class="contact__info_social"
+            data-aos="fade-up"
+            data-aos-duration="850"
+          >
+            <a
+              href="https://www.linkedin.com/company/futurewavesco/"
+              target="_blank"
+              class="contact__info_link"
+              data-aos="fade-up"
+              data-aos-duration="1050"
+            >
+              <svg
+                class="linkedin__icon"
+                width="24"
+                height="24"
+                viewBox="0 0 24 24"
+                fill="none"
+                xmlns="http://www.w3.org/2000/svg"
+              >
+                <path
+                  d="M4 6C5.10457 6 6 5.10457 6 4C6 2.89543 5.10457 2 4 2C2.89543 2 2 2.89543 2 4C2 5.10457 2.89543 6 4 6Z"
+                  fill="#144552"
+                />
+                <path
+                  d="M4 10V20"
+                  stroke="#144552"
+                  stroke-width="4"
+                  stroke-linecap="round"
+                />
+                <path
+                  d="M10 10V20"
+                  stroke="#144552"
+                  stroke-width="4"
+                  stroke-linecap="round"
+                />
+                <path
+                  d="M10 15C10 12.2386 12.2386 10 15 10C17.7614 10 20 12.2386 20 15V20"
+                  stroke="#144552"
+                  stroke-width="4"
+                  stroke-linecap="round"
+                />
+              </svg>
+            </a>
+            <a
+              href="https://twitter.com/futurewavesco?s=11"
+              target="_blank"
+              class="contact__info_link"
+              data-aos="fade-up"
+              data-aos-duration="1150"
+              ><svg
+                class="twitter__icon"
+                width="24"
+                height="24"
+                viewBox="0 0 24 24"
+                fill="none"
+                xmlns="http://www.w3.org/2000/svg"
+              >
+                <g clip-path="url(#clip0_23_176)">
+                  <path
+                    d="M4.59398 4.984C4.77504 4.96295 4.9584 4.9918 5.12425 5.06741C5.29009 5.14302 5.43212 5.26252 5.53498 5.413C7.01098 7.572 8.78298 8.47 10.75 8.674C10.846 7.833 11.073 7.002 11.5 6.27C12.126 5.196 13.144 4.406 14.598 4.114C16.608 3.71 18.138 4.438 19.025 5.329L20.817 4.994C21.0045 4.95886 21.1982 4.9781 21.3751 5.04944C21.552 5.12079 21.7049 5.24126 21.8156 5.39664C21.9263 5.55203 21.9902 5.73583 21.9999 5.92637C22.0095 6.11691 21.9644 6.30624 21.87 6.472L20.15 9.494C20.307 13.855 19.095 16.899 16.511 18.996C15.141 20.108 13.179 20.739 11.026 20.934C8.85598 21.13 6.40298 20.893 3.96498 20.181C3.75667 20.1202 3.57378 19.9934 3.44391 19.8195C3.31403 19.6457 3.24422 19.4343 3.24501 19.2174C3.2458 19.0004 3.31715 18.7895 3.44829 18.6167C3.57943 18.4438 3.76324 18.3182 3.97198 18.259C5.19798 17.91 6.13198 17.609 6.97498 17.082C5.77598 16.446 4.89298 15.614 4.26798 14.666C3.39998 13.348 3.07798 11.878 3.01398 10.553C2.94998 9.228 3.14098 8 3.34298 7.115C3.45798 6.61 3.59198 6.104 3.77698 5.62C3.84224 5.44939 3.95298 5.29991 4.09719 5.18779C4.24139 5.07567 4.41255 5.00519 4.59398 4.984Z"
+                    fill="#144552"
+                  />
+                </g>
+                <defs>
+                  <clipPath id="clip0_23_176">
+                    <rect width="24" height="24" fill="white" />
+                  </clipPath>
+                </defs></svg
+            ></a>
+            <a
+              href="https://wa.me/message/FZVH5RLLWEGYJ1"
+              class="contact__info_link"
+              data-aos="fade-up"
+              data-aos-duration="1250"
+              ><svg
+                class="whatsapp__icon"
+                width="24"
+                height="24"
+                viewBox="0 0 24 24"
+                fill="none"
+                xmlns="http://www.w3.org/2000/svg"
+              >
+                <path
+                  d="M3 21L4.65 17.2C3.38766 15.4081 2.82267 13.217 3.06104 11.0381C3.29942 8.85918 4.32479 6.84214 5.94471 5.36552C7.56463 3.8889 9.66775 3.05421 11.8594 3.0181C14.051 2.98198 16.1805 3.74693 17.8482 5.16937C19.5159 6.59182 20.6071 8.57398 20.9172 10.7439C21.2272 12.9138 20.7347 15.1222 19.5321 16.9548C18.3295 18.7873 16.4994 20.118 14.3854 20.6971C12.2713 21.2762 10.0186 21.0639 8.05 20.1L3 21Z"
+                  stroke="#144552"
+                  stroke-width="2"
+                  stroke-linecap="round"
+                  stroke-linejoin="round"
+                />
+                <path
+                  d="M9 10C9 10.1326 9.05268 10.2598 9.14645 10.3536C9.24021 10.4473 9.36739 10.5 9.5 10.5C9.63261 10.5 9.75979 10.4473 9.85355 10.3536C9.94732 10.2598 10 10.1326 10 10V9C10 8.86739 9.94732 8.74021 9.85355 8.64645C9.75979 8.55268 9.63261 8.5 9.5 8.5C9.36739 8.5 9.24021 8.55268 9.14645 8.64645C9.05268 8.74021 9 8.86739 9 9V10ZM9 10C9 11.3261 9.52678 12.5979 10.4645 13.5355C11.4021 14.4732 12.6739 15 14 15M14 15H15C15.1326 15 15.2598 14.9473 15.3536 14.8536C15.4473 14.7598 15.5 14.6326 15.5 14.5C15.5 14.3674 15.4473 14.2402 15.3536 14.1464C15.2598 14.0527 15.1326 14 15 14H14C13.8674 14 13.7402 14.0527 13.6464 14.1464C13.5527 14.2402 13.5 14.3674 13.5 14.5C13.5 14.6326 13.5527 14.7598 13.6464 14.8536C13.7402 14.9473 13.8674 15 14 15Z"
+                  stroke="#144552"
+                  stroke-width="2"
+                  stroke-linecap="round"
+                  stroke-linejoin="round"
+                />
+              </svg>
+            </a>
+            <a
+              href="https://instagram.com/futurewavesco"
+              target="_blank"
+              class="contact__info_link"
+              data-aos="fade-up"
+              data-aos-duration="1350"
+              ><svg
+                class="instagram__icon"
+                width="24"
+                height="24"
+                viewBox="0 0 24 24"
+                fill="none"
+                xmlns="http://www.w3.org/2000/svg"
+              >
+                <path
+                  d="M16.017 2H7.947C6.37015 2.00185 4.85844 2.62914 3.74353 3.74424C2.62862 4.85933 2.00159 6.37115 2 7.948L2 16.018C2.00185 17.5948 2.62914 19.1066 3.74424 20.2215C4.85933 21.3364 6.37115 21.9634 7.948 21.965H16.018C17.5948 21.9631 19.1066 21.3359 20.2215 20.2208C21.3364 19.1057 21.9634 17.5938 21.965 16.017V7.947C21.9631 6.37015 21.3359 4.85844 20.2208 3.74353C19.1057 2.62862 17.5938 2.00159 16.017 2ZM19.957 16.017C19.957 16.5344 19.8551 17.0468 19.6571 17.5248C19.4591 18.0028 19.1689 18.4371 18.803 18.803C18.4371 19.1689 18.0028 19.4591 17.5248 19.6571C17.0468 19.8551 16.5344 19.957 16.017 19.957H7.947C6.90222 19.9567 5.90032 19.5415 5.16165 18.8026C4.42297 18.0638 4.008 17.0618 4.008 16.017V7.947C4.00827 6.90222 4.42349 5.90032 5.16235 5.16165C5.90122 4.42297 6.90322 4.008 7.948 4.008H16.018C17.0628 4.00827 18.0647 4.42349 18.8034 5.16235C19.542 5.90122 19.957 6.90322 19.957 7.948V16.017Z"
+                  fill="#144552"
+                />
+                <path
+                  d="M11.982 6.819C10.6134 6.82112 9.30154 7.36579 8.33391 8.33361C7.36627 9.30143 6.82186 10.6134 6.82001 11.982C6.82159 13.3509 7.36603 14.6633 8.33391 15.6314C9.30179 16.5995 10.6141 17.1441 11.983 17.146C13.3521 17.1444 14.6647 16.5998 15.6328 15.6317C16.6008 14.6637 17.1454 13.3511 17.147 11.982C17.1449 10.6131 16.5999 9.30088 15.6317 8.33319C14.6634 7.3655 13.3509 6.82132 11.982 6.82V6.819ZM11.982 15.138C11.1452 15.138 10.3428 14.8056 9.75109 14.2139C9.15941 13.6222 8.82701 12.8198 8.82701 11.983C8.82701 11.1462 9.15941 10.3438 9.75109 9.75208C10.3428 9.1604 11.1452 8.828 11.982 8.828C12.8188 8.828 13.6213 9.1604 14.2129 9.75208C14.8046 10.3438 15.137 11.1462 15.137 11.983C15.137 12.8198 14.8046 13.6222 14.2129 14.2139C13.6213 14.8056 12.8188 15.138 11.982 15.138Z"
+                  fill="#144552"
+                />
+                <path
+                  d="M17.156 8.095C17.8392 8.095 18.393 7.54118 18.393 6.858C18.393 6.17483 17.8392 5.621 17.156 5.621C16.4728 5.621 15.919 6.17483 15.919 6.858C15.919 7.54118 16.4728 8.095 17.156 8.095Z"
+                  fill="#144552"
+                /></svg
+            ></a>
+            <a
+              href="https://t.me/futurewavesco"
+              target="_blank"
+              class="contact__info_link"
+              data-aos="fade-up"
+              data-aos-duration="1450"
+            >
+              <svg
+                width="24"
+                height="24"
+                viewBox="0 0 24 24"
+                fill="none"
+                class="telegram__icon"
+                xmlns="http://www.w3.org/2000/svg"
+              >
+                <path
+                  d="M15 10L11 14L17 20L21 4L3 11L7 13L9 19L12 15"
+                  stroke="#144552"
+                  stroke-width="2"
+                  stroke-linecap="round"
+                  stroke-linejoin="round"
+                />
+              </svg>
+            </a>
+            <a
+              href="https://youtube.com/@FutureWavesCo"
+              target="_blank"
+              class="contact__info_link"
+              data-aos="fade-up"
+              data-aos-duration="1550"
+            >
+              <svg
+                xmlns="http://www.w3.org/2000/svg"
+                width="24"
+                height="24"
+                viewBox="0 0 24 24"
+                class="youtube__icon"
+                fill="none"
+              >
+                <path
+                  d="M15.4163 11.3756L10.9163 8.37563C10.8033 8.30025 10.6719 8.25697 10.5363 8.2504C10.4006 8.24382 10.2657 8.27421 10.146 8.33831C10.0263 8.40241 9.92619 8.49783 9.85645 8.61436C9.7867 8.7309 9.74991 8.86419 9.75 9V15C9.74991 15.1358 9.7867 15.2691 9.85645 15.3856C9.92619 15.5022 10.0263 15.5976 10.146 15.6617C10.2657 15.7258 10.4006 15.7562 10.5363 15.7496C10.6719 15.743 10.8033 15.6998 10.9163 15.6244L15.4163 12.6244C15.5191 12.5559 15.6035 12.4631 15.6618 12.3542C15.7202 12.2452 15.7507 12.1236 15.7507 12C15.7507 11.8764 15.7202 11.7548 15.6618 11.6458C15.6035 11.5369 15.5191 11.4441 15.4163 11.3756ZM11.25 13.5984V10.4063L13.6481 12L11.25 13.5984ZM21.9684 6.5175C21.8801 6.17189 21.7109 5.85224 21.4747 5.58491C21.2385 5.31758 20.9421 5.11024 20.61 4.98C17.3962 3.73875 12.2812 3.75 12 3.75C11.7188 3.75 6.60375 3.73875 3.39 4.98C3.0579 5.11024 2.76153 5.31758 2.52534 5.58491C2.28915 5.85224 2.1199 6.17189 2.03156 6.5175C1.78875 7.45313 1.5 9.16313 1.5 12C1.5 14.8369 1.78875 16.5469 2.03156 17.4825C2.11977 17.8283 2.28895 18.1481 2.52515 18.4156C2.76136 18.6831 3.0578 18.8906 3.39 19.0209C6.46875 20.2088 11.2875 20.25 11.9381 20.25H12.0619C12.7125 20.25 17.5341 20.2088 20.61 19.0209C20.9422 18.8906 21.2386 18.6831 21.4748 18.4156C21.711 18.1481 21.8802 17.8283 21.9684 17.4825C22.2113 16.545 22.5 14.8369 22.5 12C22.5 9.16313 22.2113 7.45313 21.9684 6.5175ZM20.5162 17.1113C20.4877 17.2263 20.4323 17.3329 20.3545 17.4224C20.2768 17.5118 20.179 17.5816 20.0691 17.6259C17.1019 18.7716 12.0553 18.7509 12.0066 18.7509H12C11.9494 18.7509 6.90656 18.7697 3.9375 17.6259C3.8276 17.5816 3.72977 17.5118 3.65204 17.4224C3.57431 17.3329 3.51888 17.2263 3.49031 17.1113C3.2625 16.2553 3 14.6784 3 12C3 9.32157 3.2625 7.74469 3.48375 6.89344C3.51179 6.77774 3.56697 6.67037 3.64473 6.58022C3.7225 6.49007 3.8206 6.41972 3.93094 6.375C6.79219 5.26969 11.5866 5.25 11.9794 5.25H12.0047C12.0553 5.25 17.1028 5.23313 20.0672 6.375C20.1771 6.41936 20.2749 6.48913 20.3526 6.57859C20.4304 6.66806 20.4858 6.77467 20.5144 6.88969C20.7375 7.74469 21 9.32157 21 12C21 14.6784 20.7375 16.2553 20.5162 17.1066V17.1113Z"
+                  fill="#144552"
+                />
+              </svg>
+            </a>
+          </div>
+        </div>
+        <!-- ---- Contact Info End ---- -->
+      </div>
+
+      <!-- Slide Section Start -->
+      <section class="slide__section">
+        <canvas id="waves"></canvas>
+        <div class="container">
+          <div class="right__line" data-aos="fade-up" data-aos-duration="900">
+            <div class="right__line_shape"></div>
+          </div>
+          <div class="section__title">
+            <h2>Services</h2>
+          </div>
+          <div class="slide__section_content">
+            <h3>Website Design</h3>
+            <div class="slide__sub_title">
+              <p>
+                we specialize in designing and developing <br />high-quality web
+                designs that enhance your online presence and attract more
+                customers. Our team of skilled
+              </p>
+              <p>
+                professionals has a deep understanding of the latest design
+                trends and web technologies, ensuring that your website stands
+                out from the competition.
+              </p>
+            </div>
+          </div>
+          <div class="left__line" data-aos="fade-up" data-aos-duration="1100">
+            <div class="left__line_shape"></div>
+          </div>
+        </div>
+      </section>
+      <!-- Slide Section End -->
+
+      <!-- Description Section Start -->
+      <section class="description__section" data-aos="fade-up">
+        <div class="image__wrapper">
+          <img src="./assets/images/web-design.jpg" alt="rfid" />
+          <div class="container">
+            <div class="right__line"></div>
+            <div class="left__line"></div>
+          </div>
+        </div>
+      </section>
+      <!-- Description Section End -->
+
+      <!-- Items Section Start -->
+      <section class="items__section">
+        <div class="container pt-186 pb-186" data-aos="fade-up">
+          <div class="right__line"></div>
+          <div
+            class="section__title"
+            data-aos="fade-right"
+            data-aos-offset="100"
+          >
+            <h2>how it works</h2>
+          </div>
+          <div class="description__content">
+            <p
+              data-aos="fade-right"
+              data-aos-offset="100"
+              data-aos-duration="300"
+            >
+              Websites have an important role for business
+            </p>
+            <div
+              class="description__content_right"
+              data-aos="fade-right"
+              data-aos-offset="100"
+              data-aos-duration="300"
+            >
+              <p>
+                Our team of experienced designers and developers specializes in
+                creating visually stunning, user-friendly websites that are
+                optimized for performance and search engines.
+              </p>
+            </div>
+          </div>
+          <div class="left__line"></div>
+        </div>
+      </section>
+      <!-- Items Section End -->
+
+      <!-- Types Web Section Start -->
+      <section class="types__web_section" data-aos="fade-up">
+        <div class="container">
+          <div class="right__line"></div>
+          <div
+            class="section__title"
+            data-aos="fade-left"
+            data-aos-offset="100"
+          >
+            <p>We offer three types of website design services:</p>
+          </div>
+          <div class="types__web_item">
+            <div class="types__web_item_left">
+              <div
+                class="types__web_item_buttons"
+                data-aos="fade-left"
+                data-aos-offset="100"
+              >
+                <span></span>
+                <div class="splide splide__types_design">
+                  <div class="splide__track">
+                    <ul class="splide__list">
+                      <li class="splide__slide">
+                        <button
+                          class="type__web_btn active"
+                          data-target="static"
+                        >
+                          <span></span> Static
+                        </button>
+                      </li>
+                      <li class="splide__slide">
+                        <button class="type__web_btn" data-target="dynamic">
+                          <span></span> Dynamic
+                        </button>
+                      </li>
+                      <li class="splide__slide">
+                        <button class="type__web_btn" data-target="cms">
+                          <span></span> CMS
+                        </button>
+                      </li>
+                    </ul>
+                  </div>
+                </div>
+              </div>
+            </div>
+            <div class="web__items" data-aos="fade-left" data-aos-offset="100">
+              <div class="item__wrapper active" id="static">
+                <div class="item__img">
+                  <img
+                    class="lazyload type__web_img active"
+                    id="img-static"
+                    data-src="./assets/images/services/static.png"
+                    alt="service"
+                  />
+                </div>
+                <div class="item__desc">
+                  <p>
+                    These are simple websites that are easy to build and
+                    maintain. They are built using HTML, CSS, and JavaScript,
+                    and are ideal for small businesses or individuals who want a
+                    basic online presence.
+                  </p>
+                  <span
+                    class="link__view_more"
+                    onclick="openRequestFormHandler()"
+                    >Submit your request for this service!</span
+                  >
+                </div>
+              </div>
+              <div class="item__wrapper" id="dynamic">
+                <div class="item__img">
+                  <img
+                    class="lazyload type__web_img"
+                    id="img-dynamic"
+                    data-src="./assets/images/services/dynamic.png"
+                    alt="service"
+                  />
+                </div>
+                <div class="item__desc">
+                  <p>
+                    We develop hybrid mobile applications that are built using
+                    web technologies such as HTML, CSS, and JavaScript. Hybrid
+                    applications can be deployed on multiple platforms and
+                    provide a consistent user experience across different
+                    devices.
+                  </p>
+                  <span
+                    class="link__view_more"
+                    onclick="openRequestFormHandler()"
+                    >Submit your request for this service!</span
+                  >
+                </div>
+              </div>
+              <div class="item__wrapper" id="cms">
+                <div class="item__img">
+                  <img
+                    class="lazyload type__web_img"
+                    id="img-cms"
+                    data-src="./assets/images/services/cms.png"
+                    alt="service"
+                  />
+                </div>
+                <div class="item__desc">
+                  <p>
+                    Content Management Systems (CMS) websites are built using
+                    platforms like WordPress, Joomla, or Drupal. They allow
+                    users to manage and update their website content easily
+                    without any coding knowledge.
+                  </p>
+                  <span
+                    class="link__view_more"
+                    onclick="openRequestFormHandler()"
+                    >Submit your request for this service!</span
+                  >
+                </div>
+              </div>
+            </div>
+          </div>
+          <div class="left__line"></div>
+        </div>
+      </section>
+      <!-- Types App Section End -->
+
+      <!-- Process Section Start -->
+      <section class="process__section" data-aos="fade-up">
+        <div class="container pt-186 pb-186">
+          <div class="right__line"></div>
+          <div
+            class="section__title"
+            data-aos="fade-right"
+            data-aos-offset="100"
+          >
+            <h2>How does it go</h2>
+          </div>
+          <div
+            class="process__content"
+            data-aos="fade-right"
+            data-aos-offset="100"
+          >
+            <div class="process__content_left">
+              <h4>Website design & development process</h4>
+              <p>
+                Our website design process involves several stages, including:
+              </p>
+            </div>
+          </div>
+          <div
+            class="carousel__process"
+            data-aos="fade-right"
+            data-aos-offset="100"
+            data-aos-duration="300"
+          >
+            <div class="splide splide__process">
+              <div class="splide__arrows">
+                <button class="splide__arrow splide__arrow--prev">
+                  <img
+                    class="lazyload"
+                    data-src="./assets/images/icons/pre-arrow.png"
+                    alt="arrow"
+                  />
+                </button>
+                <button class="splide__arrow splide__arrow--next">
+                  <img
+                    class="lazyload"
+                    data-src="./assets/images/icons/next-arrow.png"
+                    alt="arrow"
+                  />
+                </button>
+              </div>
+              <div class="splide__track">
+                <div class="splide__list">
+                  <div class="splide__slide" data-splide-interval="10000">
+                    <div class="content">
+                      <h4>Planning and Analysis:</h4>
+                      <p>
+                        We work closely with our clients to understand their
+                        business requirements, target audience, and goals.
+                      </p>
+                    </div>
+                    <div class="image">
+                      <img
+                        class="lazyload"
+                        data-src="./assets/images/services/slide-1.png"
+                        alt="slide-image"
+                      />
+                    </div>
+                  </div>
+                  <div class="splide__slide" data-splide-interval="10000">
+                    <div class="content">
+                      <h4>Design</h4>
+                      <p>
+                        Design: Our designers create custom designs that are
+                        visually appealing and user-friendly.
+                      </p>
+                    </div>
+                    <div class="image">
+                      <img
+                        class="lazyload"
+                        data-src="./assets/images/services/slide-2.png"
+                        alt="slide-image"
+                      />
+                    </div>
+                  </div>
+                  <div class="splide__slide" data-splide-interval="10000">
+                    <div class="content">
+                      <h4>Development</h4>
+                      <p>
+                        Our developers bring the designs to life using various
+                        programming languages and website building tools.
+                      </p>
+                    </div>
+                    <div class="image">
+                      <img
+                        class="lazyload"
+                        data-src="./assets/images/services/slide-3.png"
+                        alt="slide-image"
+                      />
+                    </div>
+                  </div>
+                  <div class="splide__slide" data-splide-interval="10000">
+                    <div class="content">
+                      <h4>Testing</h4>
+                      <p>
+                        We perform thorough testing to ensure the website is
+                        fully functional and optimized for different devices and
+                        browsers.
+                      </p>
+                    </div>
+                    <div class="image">
+                      <img
+                        class="lazyload"
+                        data-src="./assets/images/services/slide-4.png"
+                        alt="slide-image"
+                      />
+                    </div>
+                  </div>
+                  <div class="splide__slide" data-splide-interval="10000">
+                    <div class="content">
+                      <h4>Launch</h4>
+                      <p>
+                        We deploy the website to the live server and ensure
+                        everything is working correctly.
+                      </p>
+                    </div>
+                    <div class="image">
+                      <img
+                        class="lazyload"
+                        data-src="./assets/images/services/slide-5.png"
+                        alt="slide-image"
+                      />
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+          <div class="left__line"></div>
+        </div>
+      </section>
+      <!-- Process Section Start -->
+
+      <!-- Quote Section Start -->
+      <section class="quote__section" data-aos="fade-up">
+        <div class="img__wrapper">
+          <img
+            class="lazyload"
+            data-src="./assets/images/services/quote-1.png"
+            alt=""
+            data-aos="fade-left"
+            data-aos-offset="100"
+          />
+          <img
+            class="lazyload"
+            data-src="./assets/images/services/quote-2.png"
+            alt=""
+            data-aos="fade-left"
+            data-aos-offset="100"
+          />
+        </div>
+        <div class="container">
+          <div class="right__line"></div>
+
+          <div
+            class="quote__content"
+            data-aos="fade-left"
+            data-aos-offset="100"
+          >
+            <h4>Crafting memorable design?</h4>
+            <p>
+              Our innovative approach to web design is what sets us apart. We
+              create beautiful, user-friendly website that engages experience
+              for your customers.
+            </p>
+          </div>
+          <div class="left__line"></div>
+        </div>
+      </section>
+      <!-- Quote Section End -->
+
+      <!-- RelatedProject Section Start -->
+      <!-- <section class="related__project_section">
+        <div class="container pt-186">
+          <div class="right__line"></div>
+          <div
+            class="section__title"
+            data-aos="fade-left"
+            data-aos-offset="100"
+          >
+            <h2>Latest projects</h2>
+          </div>
+          <div class="relatedprojects__content">
+            <p
+              data-aos="fade-left"
+              data-aos-offset="100"
+              data-aos-duration="300"
+            >
+              Here are some web design projects
+            </p>
+            <div
+              class="relatedprojects__content_right"
+              data-aos="fade-left"
+              data-aos-offset="100"
+              data-aos-duration="300"
+            >
+              <p>
+                we are constantly working on the latest and most innovative projects to provide our customers with
+cutting-edge solutions for their business needs.
+              </p>
+            </div>
+          </div>
+          <div
+            class="carousel__projects"
+            data-aos="fade-up"
+            data-aos-offset="100"
+            data-aos-duration="300"
+          >
+            <div class="splide splide__projects">
+              <div class="splide__track">
+                <div class="splide__list">
+                  <div class="splide__slide">
+                    <img
+                      class="lazyload"
+                      data-src="./assets/images/services/project-1.png"
+                      alt="project"
+                    />
+                    <p>Lorem ipsum dolor sit amet</p>
+                  </div>
+                  <div class="splide__slide">
+                    <img
+                      class="lazyload"
+                      data-src="./assets/images/services/project-2.png"
+                      alt="project"
+                    />
+                    <p>Lorem ipsum dolor sit amet</p>
+                  </div>
+                  <div class="splide__slide">
+                    <img
+                      class="lazyload"
+                      data-src="./assets/images/services/project-3.png"
+                      alt="project"
+                    />
+                    <p>Lorem ipsum dolor sit amet</p>
+                  </div>
+                </div>
+              </div>
+              <div class="splide__cursor">
+                <span></span>
+                <span></span>
+              </div>
+            </div>
+          </div>
+          <div class="left__line"></div>
+        </div>
+      </section> -->
+      <!-- RelatedProject Section End -->
+
+      <!-- ---- CTA Section Start ---- -->
+      <section class="cta__section" data-aos="fade-up">
+        <div
+          class="container pt-186 pb-186"
+          data-aos="fade-up"
+          data-aos-offset="100"
+        >
+          <div class="right__line"></div>
+          <div
+            class="section__title"
+            data-aos="fade-left"
+            data-aos-offset="100"
+          >
+            <h2>hi</h2>
+          </div>
+          <div class="cta__one_content">
+            <p
+              data-aos="fade-left"
+              data-aos-offset="100"
+              data-aos-duration="300"
+            >
+              Like to request this service?
+            </p>
+            <div
+              class="cta__one_content_right"
+              data-aos="fade-left"
+              data-aos-offset="100"
+              data-aos-duration="300"
+            >
+              <p>
+                Just say hello. We would love to learn about your goals and
+                brainstorm ideas together.
+              </p>
+              <span class="link__view_more" onclick="openRequestFormHandler()"
+                >Submit your request!</span
+              >
+            </div>
+          </div>
+          <div class="left__line"></div>
+        </div>
+      </section>
+      <!-- ---- CTA Section End ---- -->
+    </main>
+
+    <!-- ==== Footer Start ==== -->
+    <footer class="footer" data-aos="fade-up">
+      <div class="container">
+        <div class="right__line"></div>
+        <div class="cols">
+          <div
+            class="col__footer col__footer_one"
+            data-aos="fade-up"
+            data-aos-offset="100"
+            data-aos-duration="300"
+          >
+            <a href="./index.html">
+              <img
+                class="lazyload"
+                data-src="./assets/images/logo-footer.png"
+                alt="logo"
+              />
+            </a>
+            <p>
+              Team of experts from future, provides comprehensive IT services
+              and solution.
+            </p>
+          </div>
+          <div class="col__wrapper">
+            <div
+              class="col__footer col__footer_two"
+              data-aos="fade-up"
+              data-aos-offset="100"
+              data-aos-duration="500"
+            >
+              <div class="top__col">
+                <h4>services</h4>
+                <ul>
+                  <a href="./mobile-app.html">mobile app</a>
+                  <a href="./web-service.html">web service</a>
+                  <a href="./web-design.html">web design</a>
+                </ul>
+              </div>
+              <div class="link__col">
+                <a href="./careers.html">career</a>
+                <a href="#">faq</a>
+                <a href="#">privacy policy</a>
+              </div>
+            </div>
+            <div
+              class="col__footer col__footer_three"
+              data-aos="fade-up"
+              data-aos-offset="100"
+              data-aos-duration="700"
+            >
+              <div class="top__col">
+                <h4>products</h4>
+                <ul>
+                  <a href="./products/rfid.html">rfid</a>
+                  <a href="./products/erp.html">erp</a>
+                  <a href="./products/mms.html">mms</a>
+                  <a href="./products/crm.html">crm</a>
+                  <a href="./products/his.html">his</a>
+                  <a href="./products/bpms.html">bpms</a>
+                  <a href="./products/modular-design.html">modular desing</a>
+                </ul>
+              </div>
+            </div>
+            <div
+              class="col__footer col__footer_four"
+              data-aos="fade-up"
+              data-aos-offset="100"
+              data-aos-duration="900"
+            >
+              <div class="top__col">
+                <h4>subscribe</h4>
+                <div class="subscribe__input">
+                  <input type="text" placeholder="EMAIL" />
+                  <button class="submit__input">
+                    <img
+                      class="lazyload"
+                      data-src="./assets/images/icons/next-arrow.png"
+                      alt="arrow"
+                    />
+                  </button>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+        <div class="copyright">
+          <p>© 2023 Future Waves. All rights reserved.</p>
+        </div>
+        <div class="left__line"></div>
+
+        <div class="goto__top_button">
+          <img src="./assets/images/icons/scroll-top.png" alt="icon" />
+        </div>
+      </div>
+    </footer>
+    <!-- ==== Footer End ==== -->
+
+    <script src="./assets/scripts/lazysizes/lazysizes.min.js"></script>
+    <!-- <script
+      src="https://cdnjs.cloudflare.com/ajax/libs/aos/2.3.4/aos.js"
+      integrity="sha512-A7AYk1fGKX6S2SsHywmPkrnzTZHrgiVT7GcQkLGDe2ev0aWb8zejytzS8wjo7PGEXKqJOrjQ4oORtnimIRZBtw=="
+      crossorigin="anonymous"
+      referrerpolicy="no-referrer"
+    ></script> -->
+    <script src="https://cdn.jsdelivr.net/npm/@splidejs/splide@4.1.4/dist/js/splide.min.js
+"></script>
+<script src="
+https://cdn.jsdelivr.net/npm/sine-waves@0.3.0/sine-waves.min.js
+"></script>
+    <script src="./assets/scripts/web-design.js" defer></script>
+  </body>
+</html>

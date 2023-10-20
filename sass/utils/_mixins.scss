@@ -1,0 +1,127 @@
+@mixin section-title-style {
+    .section__title {
+        h2 {
+            color: $color-orange;
+            text-transform: capitalize;
+            font-weight: 300;
+
+            // **** Responsive
+            @media screen and (max-width: 640px) {
+                font-size: 19px;
+            }
+            @media screen and (max-width: 430px) {
+                font-size: 15px;
+            }
+        }
+    }
+}
+@mixin container-lines-style($bg-color) {
+    .right__line,
+    .left__line {
+        position: absolute;
+        width: 1px;
+        height: 100%;
+        opacity: 0.4;
+        top: 0;
+        background-color: $bg-color;
+        z-index: 10;
+
+        // **** Responsive
+        @media screen and (max-width: 430px) {
+            display: none;
+        }
+    }
+    .right__line {
+        right: 0;
+    }
+    .left__line {
+        left: 0;
+    }
+}
+@mixin section-content-style($parent-selector, $color) {
+    margin-top: 70px;
+    display: flex;
+    justify-content: space-between;
+    flex-wrap: wrap;
+    row-gap: 25px;
+    p {
+        width: 365px;
+        color: $color;
+        font-size: 50px;
+        font-weight: 400;
+        line-height: 61px;
+
+        // **** Responsive
+        @media screen and (max-width: 1200px) {
+            width: 95%;
+        }
+        @media screen and (max-width: 640px) {
+            font-size: 35px;
+            width: 100%;
+        }
+        @media screen and (max-width: 430px) {
+            font-size: 22px;
+            font-weight: bold;
+            line-height: 36px;
+        }
+    }
+    #{$parent-selector}_right {
+        width: 45%;
+        display: flex;
+        flex-direction: column;
+        align-items: flex-start;
+        row-gap: 55px;
+        p {
+            width: 339px;
+            max-width: 100%;
+            font-size: 20px;
+            color: $color;
+            line-height: 31px;
+            // **** Responsive
+            @media screen and (max-width: 640px) {
+                font-size: 18px;
+            }
+            @media screen and (max-width: 430px) {
+                font-size: 15px;
+                font-weight: 400;
+            }
+        }
+        .link__view_more {
+            position: relative;
+            padding-left: 40px;
+            text-transform: uppercase;
+            color: $color;
+            font-size: 20px;
+            z-index: 1;
+            &::before {
+                position: absolute;
+                content: "";
+                left: 0;
+                top: 50%;
+                transform: translateY(-50%);
+                width: 22%;
+                height: 5px;
+                background-color: $color-yellow;
+            }
+            &:hover {
+                &::before {
+                    width: 100%;
+                    z-index: -1;
+                }
+            }
+
+            // **** Responsive
+            @media screen and (max-width: 430px) {
+                font-size: 20px;
+            }
+        }
+        @media screen and (max-width: 1200px) {
+            width: 95%;
+        }
+    }
+
+    // **** Responsive
+    @media screen and (max-width: 430px) {
+        margin-top: 55px;
+    }
+}
